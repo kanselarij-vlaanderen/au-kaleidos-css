@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css",
+    "prepare": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

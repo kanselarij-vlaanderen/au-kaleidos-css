@@ -1,0 +1,45 @@
+// @todo find out where this is being used and why it exists as is
+
+$page-bg: #FFF;
+$base-font: flanders-sans, sans-serif;
+$form-font-size: 1.4rem;
+$text-color: #333332;
+$outline-color: #FFC515; // au=yellow-400
+$placeholder-color: #666;
+
+.au2-textarea-alt {
+  display: inline-block;
+  background: $page-bg;
+  font-family: $base-font;
+  font-size: $form-font-size;
+  color: $text-color;
+  max-width: 100%;
+  height: auto;
+  line-height: normal;
+  border-radius: 0;
+  border: 0.1rem solid $border-color;
+  -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus,
+  &--focus {
+    outline: none;
+    border-color: $outline-color;
+    box-shadow: inset 0 0 0 0.1rem $outline-color;
+  }
+  
+  &::placeholder {
+    color: $placeholder-color;
+  }
+  
+  // Textarea block modifier
+  &--block {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
