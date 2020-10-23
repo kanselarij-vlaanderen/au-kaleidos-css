@@ -3,8 +3,10 @@
    ========================================================================== */
 
 .au2-icon {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
+  align-content: center;
+  justify-content: center;
 
   svg {
     width: 100%;

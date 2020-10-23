@@ -11,14 +11,12 @@
   filter: drop-shadow(0 0 1rem rgba(0,0,0,0.2));
 }
 
+/* Parts
+   ========================================================================== */
+
 // We use a specific logic of divs to make sure the modal flexes correctly
 .au2-modal__push {
   flex: 1 0 auto;
-}
-
-.au2-modal--large {
-  width: 72rem;
-  margin: 0 auto;
 }
 
 .au2-modal__header {
@@ -26,7 +24,7 @@
 }
 
 .au2-modal__header--bordered {
-  border-bottom: 0.1rem solid $au-gray-200;
+  border-bottom: 0.1rem solid $au-gray-300;
 }
 
 .au2-modal__footer {
@@ -34,7 +32,7 @@
 }
 
 .au2-modal__footer--bordered {
-  border-top: 0.1rem solid $au-gray-200;
+  border-top: 0.1rem solid $au-gray-300;
 }
 
 .au2-modal__header,
@@ -46,7 +44,32 @@
 
 .au2-modal__content {
   padding: 2rem;
+  overflow: scroll;
 }
+
+/* Sizes 
+   ========================================================================== */
+
+.au2-modal--large {
+  width: 72rem;
+  margin: 0 auto;
+}
+
+.au2-modal--full-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  max-width: 100%;
+  height: calc(100vh - 4rem);
+  .au2-modal__content {
+    height: 100%;
+    flex: 1 1 auto;
+  }
+}
+
 
 /* Backdrop 
    ========================================================================== */

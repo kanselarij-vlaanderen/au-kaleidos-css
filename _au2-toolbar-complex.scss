@@ -2,7 +2,7 @@
   au2-toolbar-complex (complex variant)
    ========================================================================== */
 
- .au2-toolbar-complex {
+.au2-toolbar-complex {
   min-height: 5rem;
   width: 100%;
   display: flex;
@@ -26,12 +26,10 @@
   display: inline;
 }
 
-
 .au2-toolbar-complex--auto {
   min-height: auto;
   height: auto;
 }
-
 
 .au2-toolbar-complex__left,
 .au2-toolbar-complex__right {
