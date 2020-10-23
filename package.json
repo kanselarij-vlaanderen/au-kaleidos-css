@@ -1,7 +1,7 @@
 {
-  "name": "au2-kaleidos",
-  "version": "1.2.0",
-  "description": "",
+  "name": "au2-kaleidos-css",
+  "version": "1.0.0",
+  "description": "AU2 Kaleidos CSS as a separate package.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
