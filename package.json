@@ -1,5 +1,5 @@
 {
-  "name": "au2-kaleidos-css",
+  "name": "au-kaleidos-css",
   "version": "1.0.0",
   "description": "AU2 Kaleidos CSS as a separate package.",
   "main": "index.js",
