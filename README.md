@@ -1,6 +1,6 @@
-# AU2 Kaleidos SCSS
+# AU Kaleidos SCSS
 
-AU2 Kaleidos SCSS as a separate package.
+AU Kaleidos SCSS as a separate package.
 
 This package consists of 2 SCSS files.
 
