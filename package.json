@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css",
-    "prepare": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css"
+    "prepublishOnly": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css"
   },
   "keywords": [],
   "author": "",
