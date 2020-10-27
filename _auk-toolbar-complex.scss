@@ -1,8 +1,8 @@
 /* ==========================================================================
-  au2-toolbar-complex (complex variant)
+  auk-toolbar-complex (complex variant)
    ========================================================================== */
 
-.au2-toolbar-complex {
+.auk-toolbar-complex {
   min-height: 5rem;
   width: 100%;
   display: flex;
@@ -11,7 +11,7 @@
   justify-content: space-around;
 }
 
-.au2-toolbar-complex__title {
+.auk-toolbar-complex__title {
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
@@ -19,48 +19,48 @@
   padding-right: .6rem;
 }
 
-.au2-toolbar-complex__title--small {
+.auk-toolbar-complex__title--small {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0;
   display: inline;
 }
 
-.au2-toolbar-complex--auto {
+.auk-toolbar-complex--auto {
   min-height: auto;
   height: auto;
 }
 
-.au2-toolbar-complex__left,
-.au2-toolbar-complex__right {
+.auk-toolbar-complex__left,
+.auk-toolbar-complex__right {
   flex: 1 0 auto;
   display: flex;
   align-items: center;
   max-width: 100%;
 }
 
-.au2-toolbar-complex__left {
+.auk-toolbar-complex__left {
   justify-content: flex-start;
 }
 
-.au2-toolbar-complex__left .au2-toolbar-complex__item {
+.auk-toolbar-complex__left .auk-toolbar-complex__item {
   margin-right: 1rem;
   max-width: 100%;
 }
 
-.au2-toolbar-complex__left .au2-toolbar-complex__item:only-child {
+.auk-toolbar-complex__left .auk-toolbar-complex__item:only-child {
   margin: 0;
 }
 
-.au2-toolbar-complex__right {
+.auk-toolbar-complex__right {
   justify-content: flex-end;
 }
 
-.au2-toolbar-complex__right .au2-toolbar-complex__item {
+.auk-toolbar-complex__right .auk-toolbar-complex__item {
   margin-left: 1rem;
   max-width: 100%;
 }
 
-.au2-toolbar-complex__right .au2-toolbar-complex__item:only-child {
+.auk-toolbar-complex__right .auk-toolbar-complex__item:only-child {
   margin: 0;
 }

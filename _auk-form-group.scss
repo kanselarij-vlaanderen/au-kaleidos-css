@@ -1,22 +1,22 @@
 /* ==========================================================================
-  au2-form-group
+  auk-form-group
    ========================================================================== */
 
-.au2-form-group {
+.auk-form-group {
   margin: 0 0 1.8rem;
 }
 
-.au2-form-group:last-child {
+.auk-form-group:last-child {
   margin: 0;
 }
 
-.au2-form-group-layout--horizontal {
+.auk-form-group-layout--horizontal {
 
-  .au2-form-group {
+  .auk-form-group {
     display: flex;
   }
 
-  .au2-label {
+  .auk-label {
     width: 45%;
     max-width: 22rem;
     padding: 0;
@@ -33,7 +33,7 @@
 
 }
 
-.au2-form-group--error {
+.auk-form-group--error {
 
   label {
     color: #DB3434;
@@ -45,7 +45,7 @@
 
 }
 
-.au2-form-group--input-text-grey {
+.auk-form-group--input-text-grey {
 
   textarea, input, select {
     color:#333332;

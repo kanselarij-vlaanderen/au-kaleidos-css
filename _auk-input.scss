@@ -1,40 +1,40 @@
 /* ==========================================================================
-  au2-input
+  auk-input
    ========================================================================== */
 
-.au2-input {
+.auk-input {
   border: 0.1rem solid $au-gray-300;
   padding: .7rem;
   font-family: flanders-sans, sans-serif;
   font-size: 1.5rem;
 }
 
-.au2-input:focus {
+.auk-input:focus {
   outline: 0;
   border-color: $au-yellow-400;
   box-shadow: inset 0 0 0 0.1rem $au-yellow-400;
 }
 
-.au2-input--block {
+.auk-input--block {
   display: block;
   width: 100%;
 }
 
-.au2-input--error {
+.auk-input--error {
   border: .1rem solid $au-red-500;
 }
 
-.au2-input-with-icon {
+.auk-input-with-icon {
   display: block;
   position: relative;
   width: 100%;
   height: 3.6rem;
 
-  .au2-input {
+  .auk-input {
     padding-left: 3rem;
   }
 
-  .au2-icon {
+  .auk-icon {
     left: 0.8rem;
     opacity: 0.75;
     position: absolute;
@@ -44,6 +44,6 @@
   }
 }
 
-.au2-input--max-width {
+.auk-input--max-width {
   max-width: 30%;
 }

@@ -1,5 +1,5 @@
 /* ==========================================================================
-  au2-button
+  auk-button
    ========================================================================== */
 
 /* Mixins
@@ -16,7 +16,7 @@
 /* Component
    ========================================================================== */
 
-.au2-button {
+.auk-button {
   font-family: flanders-sans, sans-serif;
   font-size: 1.6rem;
   border: none;
@@ -30,31 +30,31 @@
   @include button-focus;
 }
 
-.au2-button {
-  .au2-icon + .au2-button__label,
-  .au2-button__label + .au2-icon {
+.auk-button {
+  .auk-icon + .auk-button__label,
+  .auk-button__label + .auk-icon {
     margin-left: .6rem;
   }
 }
 
-.au2-button--icon {
+.auk-button--icon {
   padding: .8rem;
 }
 
-.au2-button--block {
+.auk-button--block {
   width: 100%;
   text-align: center;
   justify-content: center;
 }
 
-.au2-button--icon img {
+.auk-button--icon img {
   display: block;
 }
 
 /* Skins
    ========================================================================== */
 
-.au2-button--primary {
+.auk-button--primary {
   background: $au-blue-700;
   color: #FFF;
   &:hover,
@@ -63,7 +63,7 @@
   }
 }
 
-.au2-button--secondary {
+.auk-button--secondary {
   box-shadow: inset 0 0 0 .2rem $au-blue-700;
   color: $au-blue-700;
   background: none;
@@ -74,7 +74,7 @@
   }
 }
 
-.au2-button--tertiary {
+.auk-button--tertiary {
   box-shadow: inset 0 0 0 .1rem $au-gray-300;
   color: $au-blue-700;
   background: none;
@@ -84,7 +84,7 @@
   }
 }
 
-.au2-button--borderless {
+.auk-button--borderless {
   border: .1rem solid transparent;
   color: $au-blue-700;
   background: none;
@@ -94,7 +94,7 @@
   }
 }
 
-.au2-button--danger-primary {
+.auk-button--danger-primary {
   border: .1rem solid transparent;
   color: #FFF;
   background: $au-red-600;
@@ -104,7 +104,7 @@
   }
 }
 
-.au2-button--danger-hover {
+.auk-button--danger-hover {
   border: .1rem solid $au-gray-700;
   color: $au-gray-700;
   background: none;
@@ -115,7 +115,7 @@
   }
 }
 
-.au2-button--disabled {
+.auk-button--disabled {
   color: $au-gray-500;
   background-color: none;
 
@@ -127,6 +127,6 @@
 /* Sizes
    ========================================================================== */
 
-.au2-button--size-s {
+.auk-button--size-s {
   font-size: 1.3rem;
 }

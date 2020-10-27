@@ -1,8 +1,8 @@
 /* ==========================================================================
-  au2-alert
+  auk-alert
   ========================================================================== */
 
-.au2-alert {
+.auk-alert {
   padding: 1.6rem;
   margin: 0 0 1.6rem;
   display: flex;
@@ -10,13 +10,13 @@
   align-items: center;
 }
 
-.au2-alert {
-  .au2-badge {
+.auk-alert {
+  .auk-badge {
     flex-shrink: 0;
   }
 }
 
-.au2-alert__body {
+.auk-alert__body {
   display: flex;
   align-items: center;
   & > *:not(:last-child) {
@@ -24,12 +24,12 @@
   }
 }
 
-.au2-alert__text {
-  .au2-alert__title {
+.auk-alert__text {
+  .auk-alert__title {
     font-weight: 500;
     margin-bottom: .2rem;
   }
-  .au2-alert__message {
+  .auk-alert__message {
     margin-bottom: 0;
   }
 }
@@ -37,25 +37,25 @@
 /* Skins 
    ========================================================================== */
 
-.au2-alert--default {
+.auk-alert--default {
   background: $au-gray-100;
-  .au2-badge--default {
+  .auk-badge--default {
     background-color: #FFFFFF;
   }
 }
 
-.au2-alert--success {
+.auk-alert--success {
   background: $au-green-100;
 }
 
-.au2-alert--error {
+.auk-alert--error {
   background: $au-red-100;
 }
 
-.au2-alert--warning {
+.auk-alert--warning {
   background: $au-yellow-100;
 }
 
-.au2-alert--loading {
+.auk-alert--loading {
   background: $au-gray-100;
 }

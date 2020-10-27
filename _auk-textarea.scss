@@ -1,8 +1,8 @@
 /* ==========================================================================
-  au2-textarea
+  auk-textarea
    ========================================================================== */
 
-.au2-textarea {
+.auk-textarea {
   border: 0.1rem solid $au-gray-300;
   padding: .6rem;
   width: 100%;
@@ -10,7 +10,7 @@
   font-size: 1.5rem;
 }
 
-.au2-textarea:focus {
+.auk-textarea:focus {
   outline: 0;
   border-color: $au-yellow-400;
   box-shadow: inset 0 0 0 0.1rem $au-yellow-400;

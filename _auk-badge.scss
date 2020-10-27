@@ -1,8 +1,8 @@
 /* ==========================================================================
-  au2-badge
+  auk-badge
   ========================================================================== */
 
-.au2-badge {
+.auk-badge {
   width: 4rem;
   height: 4rem;
   border-radius: 100%;
@@ -15,10 +15,10 @@
 /* Sizes
    ========================================================================== */
 
-.au2-badge--small {
+.auk-badge--small {
   width: 2rem;
   height: 2rem;
-  .au2-icon {
+  .auk-icon {
     width: 1.2rem;
     height: 1.2rem;
   }
@@ -27,26 +27,26 @@
 /* Skins
    ========================================================================== */
 
-.au2-badge--default {
+.auk-badge--default {
   background: $au-gray-200;
   color: #666;
 }
 
-.au2-badge--white {
+.auk-badge--white {
   background: #FFF;
 }
 
-.au2-badge--success {
+.auk-badge--success {
   background: $au-green-500;
   color: #FFF;
 }
 
-.au2-badge--error {
+.auk-badge--error {
   background: #DB3434;
   color: #FFF;
 }
 
-.au2-badge--warning {
+.auk-badge--warning {
   background: $au-yellow-400;
   color: #000;
 }
