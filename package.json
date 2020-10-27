@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css",
-    "prepublishOnly": "sass au2-kaleidos-standalone.scss au2-kaleidos-standalone.css"
+    "build": "sass auk-standalone.scss auk-standalone.css",
+    "prepublishOnly": "sass auk-standalone.scss auk-standalone.css"
   },
   "keywords": [],
   "author": "",
