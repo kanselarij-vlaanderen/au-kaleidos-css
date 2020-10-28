@@ -1,0 +1,32 @@
+/* ==========================================================================
+  auk-status-pill
+   ========================================================================== */
+
+.auk-status-pill {
+  border: .1rem solid $au-gray-300;
+  border-radius: .5rem;
+  padding: .35rem .6rem;
+  white-space: nowrap;
+}
+
+.auk-status-pill__label {
+  padding-left: .4rem;
+}
+
+.auk-status-pill--in-progress {
+  .auk-icon {
+    color: $au-yellow-400;
+  }
+}
+
+.auk-status-pill--done {
+  .auk-icon {
+    color: $au-green-500;
+  }
+}
+
+.auk-status-pill--not-started {
+  .auk-icon {
+    color: $au-gray-800;
+  }
+}

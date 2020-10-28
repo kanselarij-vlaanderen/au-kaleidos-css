@@ -1,0 +1,24 @@
+/* ==========================================================================
+  auk-list
+  ========================================================================== */
+
+.auk-list .auk-list__item {
+    margin: 1.5rem 0;
+}
+
+.auk-list__item--flex {
+    display: flex;
+    align-items: center;
+}
+
+.auk-list--bordered {
+    .auk-list__item {
+        border-bottom: .1rem solid $au-gray-300;
+        padding: 1.2rem 0;
+        margin: 0;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}

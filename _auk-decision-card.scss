@@ -1,0 +1,28 @@
+/* ==========================================================================
+  auk-decision-card
+   ========================================================================== */
+
+.auk-decision-card {
+  padding: 1.2rem;
+  border: .1rem solid $au-gray-300;
+}
+
+.auk-decision-card__status {
+  margin: 1rem 0 1.5rem;
+}
+
+.auk-decision-card__divider {
+  width: 100%;
+  border-top: .1rem solid $au-gray-300;
+}
+
+.auk-decision-card__fiche--empty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  h4 {
+    margin: 0;
+  }
+}

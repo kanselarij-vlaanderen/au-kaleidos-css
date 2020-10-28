@@ -1,0 +1,19 @@
+/* ==========================================================================
+  Component: sidebar
+  ========================================================================== */
+
+.auk-sidebar {
+  padding: 2rem 0;
+}
+
+.auk-sidebar__item a {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  color: $au-gray-600;
+}
+
+.auk-sidebar__item a.active {
+  background: $au-gray-200;
+  color: $au-gray-800;
+}

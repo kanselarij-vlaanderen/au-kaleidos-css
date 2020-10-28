@@ -1,0 +1,17 @@
+/* ==========================================================================
+  auk-document
+  ========================================================================== */
+
+.auk-document {
+  display: flex;
+  padding: .8rem 1.2rem .8rem 0;
+
+  .auk-icon--document-updated svg path {
+    fill: $au-green-500;
+  }
+}
+
+.auk-document__name {
+  padding-left: .6rem;
+  color: $au-gray-600;
+}
