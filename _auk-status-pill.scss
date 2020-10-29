@@ -30,3 +30,9 @@
     color: $au-gray-800;
   }
 }
+
+.auk-status-pill--error {
+  .auk-icon {
+    color: $au-red-600;
+  }
+}
