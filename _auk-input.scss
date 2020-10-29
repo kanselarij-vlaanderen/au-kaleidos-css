@@ -7,6 +7,11 @@
   padding: .7rem;
   font-family: flanders-sans, sans-serif;
   font-size: 1.5rem;
+  color: $au-gray-800;
+}
+
+.auk-input::placeholder {
+  color: $au-gray-500;
 }
 
 .auk-input:focus {

@@ -36,19 +36,11 @@
 .auk-form-group--error {
 
   label {
-    color: #DB3434;
+    color: $au-red-700;
   }
 
   input, textarea {
-    border-color: #DB3434;
-  }
-
-}
-
-.auk-form-group--input-text-grey {
-
-  textarea, input, select {
-    color:#333332;
+    border-color: $au-red-700;
   }
 
 }
