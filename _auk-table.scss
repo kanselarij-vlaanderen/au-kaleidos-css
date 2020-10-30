@@ -83,6 +83,12 @@
   }
 }
 
+.auk-table--disable-bottom-border {
+  .data-table__actions {
+    border-bottom: 0px solid black;
+  }
+}
+
 /* Table columns
    ========================================================================== */
 
