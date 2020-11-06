@@ -27,6 +27,7 @@
   vertical-align: top;
   padding: .8rem 1.2rem;
   background-color: transparent;
+  white-space: nowrap;
   @include button-focus;
 }
 
