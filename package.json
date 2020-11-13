@@ -1,13 +1,13 @@
 {
   "name": "@kanselarij-vlaanderen/au-kaleidos-css",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "AppUniversum inspired Kaleidos CSS as a separate package.",
-  "main": "index.js",
+  "main": "auk-standalone.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --watch auk-standalone.scss auk-standalone.css",
     "build": "sass auk-standalone.scss auk-standalone.css",
-    "prepare": "sass auk-standalone.scss auk-standalone.css"
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
