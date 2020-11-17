@@ -9,7 +9,10 @@
   display: flex;
   align-items: center;
   font-size: 1.3rem;
-  margin-top: 0.5rem;
+  .auk-input + &,
+  .auk-input-with-icon + &  {
+    margin-top: 0.5rem;
+  }
   .auk-icon {
     margin-right: 0.5rem;
   }
