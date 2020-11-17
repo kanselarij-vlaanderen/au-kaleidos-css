@@ -6,6 +6,7 @@
     height: 100%;
     background: $au-gray-100;
   }
+<<<<<<< HEAD
   .auk-sidebar--gray-100 {
     background: $au-gray-100;
   }
@@ -18,11 +19,31 @@
   .auk-sidebar--left {
     border-right: .1rem solid $au-gray-300;
   }
+=======
+
+  .auk-sidebar--gray-100 {
+    background: $au-gray-100;
+  }
+
+  .auk-sidebar--gray-200 {
+    background: $au-gray-200;
+  }
+
+  .auk-sidebar--white {
+    background: #FFF;
+  }
+
+  .auk-sidebar--left {
+    border-right: .1rem solid $au-gray-300;
+  }
+
+>>>>>>> 7e1b8fff041631754b1458d74d6114aa29af633c
   .auk-sidebar--right {
     border-left: .1rem solid $au-gray-300;
   }
 
   /* Sidebar items
+<<<<<<< HEAD
    ========================================================================== */
 .auk-sidebar__item a {
   display: block;
@@ -36,3 +57,18 @@
 }
 
 
+=======
+     ========================================================================== */
+
+  .auk-sidebar__item a {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    color: $au-gray-600;
+  }
+
+  .auk-sidebar__item a.active {
+    background: $au-gray-200;
+    color: $au-gray-800;
+  }
+>>>>>>> 7e1b8fff041631754b1458d74d6114aa29af633c

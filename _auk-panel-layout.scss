@@ -47,22 +47,19 @@
   min-width: 0;
 }
 
-.auk-panel-layout__proceduresteps {
-  width: 35rem;
-  height: 100%;
-}
-
 .auk-panel-layout__sidebar {
   width: 24rem;
   height: 100%;
 }
 
-.auk-panel-layout__publication {
-  width: 36rem;
-  height: 100%;
+.auk-panel-layout__sidebar--large {
+  width: 35rem;
 }
 
-.auk-panel-layout__publication--collapsed {
+.auk-panel-layout__sidebar--small {
+  width: 20rem;
+}
+
+.auk-panel-layout__sidebar--collapsed {
   width: 6.4rem;
 }
-
