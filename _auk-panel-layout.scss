@@ -64,7 +64,7 @@
   width: 6.4rem;
 }
 
-/* Responsive (collapsible) panel layout
+/* Responsive panel layout
     ========================================================================== */
 
 .auk-panel-layout--responsive {
@@ -86,9 +86,16 @@
 
 @media (min-width: 1680px) {
   .auk-panel-layout--responsive {
-    .auk-panel-layout__sidebar {
+    position: initial;
+
+    .auk-panel-layout__sidebar:not(.auk-panel-layout__sidebar--collapsed) {
       position: initial;
       box-shadow: none;
+    }
+
+    .auk-panel-layout__main-content {
+      flex: 1;
+      width: 100%;
     }
   }
 }
