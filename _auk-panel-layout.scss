@@ -63,3 +63,32 @@
 .auk-panel-layout__sidebar--collapsed {
   width: 6.4rem;
 }
+
+/* Responsive (collapsible) panel layout
+    ========================================================================== */
+
+.auk-panel-layout--responsive {
+  position: relative;
+
+  .auk-panel-layout__sidebar:not(.auk-panel-layout__sidebar--collapsed) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -8px 15px 10px rgba(0, 0, 0, 0.14),
+      -3px 15px 14px rgba(0, 0, 0, 0.12), -4px 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .auk-panel-layout__main-content {
+    width: calc(100% - 6.4rem);
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 1680px) {
+  .auk-panel-layout--responsive {
+    .auk-panel-layout__sidebar {
+      position: initial;
+      box-shadow: none;
+    }
+  }
+}
