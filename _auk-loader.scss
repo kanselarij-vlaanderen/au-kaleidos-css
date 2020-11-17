@@ -1,0 +1,22 @@
+/* ==========================================================================
+  auk-loader
+  ========================================================================== */
+
+  .auk-loader {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 1.6rem;
+  }
+
+  .auk-loader-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+    .auk-loader{
+        margin-bottom: .5rem
+    }
+  }
