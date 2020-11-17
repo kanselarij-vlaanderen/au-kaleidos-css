@@ -25,7 +25,7 @@
   display: inline-flex;
   align-items: center;
   vertical-align: top;
-  padding: .8rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   background-color: transparent;
   white-space: nowrap;
   @include button-focus;
@@ -34,12 +34,12 @@
 .auk-button {
   .auk-icon + .auk-button__label,
   .auk-button__label + .auk-icon {
-    margin-left: .6rem;
+    margin-left: 0.6rem;
   }
 }
 
 .auk-button--icon {
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 .auk-button--block {
@@ -56,9 +56,8 @@
    ========================================================================== */
 
 .auk-button--primary {
-  border: .1rem solid transparent;
   background: $au-blue-600;
-  color: #FFF;
+  color: #fff;
   &:hover,
   &:active {
     background: $au-blue-700;
@@ -66,20 +65,18 @@
 }
 
 .auk-button--secondary {
-  border: .1rem solid transparent;
-  box-shadow: inset 0 0 0 .2rem $au-blue-600;
+  box-shadow: inset 0 0 0 0.2rem $au-blue-600;
   color: $au-blue-700;
   background: none;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
   &:hover,
   &:active {
-    box-shadow: inset 0 0 0 .3rem $au-blue-700;
+    box-shadow: inset 0 0 0 0.3rem $au-blue-700;
   }
 }
 
 .auk-button--tertiary {
-  border: .1rem solid transparent;
-  box-shadow: inset 0 0 0 .1rem $au-gray-300;
+  box-shadow: inset 0 0 0 0.1rem $au-gray-300;
   color: $au-blue-700;
   background: none;
   &:hover,
@@ -89,7 +86,6 @@
 }
 
 .auk-button--borderless {
-  border: .1rem solid transparent;
   color: $au-blue-700;
   background: none;
   &:hover,
@@ -99,8 +95,7 @@
 }
 
 .auk-button--danger-primary {
-  border: .1rem solid transparent;
-  color: #FFF;
+  color: #fff;
   background: $au-red-600;
   &:hover,
   &:active {
@@ -109,7 +104,7 @@
 }
 
 .auk-button--danger-hover {
-  border: .1rem solid $au-gray-600;
+  box-shadow: inset 0 0 0 0.1rem $au-gray-600;
   color: $au-gray-700;
   background: none;
   &:hover,
@@ -127,7 +122,6 @@
     cursor: default;
   }
 }
-
 
 /* Sizes
    ========================================================================== */
