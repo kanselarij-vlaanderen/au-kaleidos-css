@@ -2,33 +2,34 @@
   Component: sidebar
   ========================================================================== */
 
-  .auk-sidebar {
-    height: 100%;
-    background: $au-gray-100;
-  }
+.auk-sidebar {
+  height: 100%;
+  background: $au-gray-100;
+}
 
-  .auk-sidebar--gray-100 {
-    background: $au-gray-100;
-  }
+.auk-sidebar--gray-100 {
+  background: $au-gray-100;
+}
 
-  .auk-sidebar--gray-200 {
-    background: $au-gray-200;
-  }
+.auk-sidebar--gray-200 {
+  background: $au-gray-200;
+}
 
-  .auk-sidebar--white {
-    background: #FFF;
-  }
+.auk-sidebar--white {
+  background: #fff;
+}
 
-  .auk-sidebar--left {
-    border-right: .1rem solid $au-gray-300;
-  }
+.auk-sidebar--left {
+  border-right: 0.1rem solid $au-gray-300;
+}
 
-  .auk-sidebar--right {
-    border-left: .1rem solid $au-gray-300;
-  }
+.auk-sidebar--right {
+  border-left: 0.1rem solid $au-gray-300;
+}
 
-  /* Sidebar items
+/* Sidebar items
    ========================================================================== */
+
 .auk-sidebar__item a {
   display: block;
   text-decoration: none;
