@@ -2,17 +2,17 @@
   auk-toolbar (simple variant)
    ========================================================================== */
 
-   .auk-toolbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .auk-toolbar__title {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 0;
-  }
-  
-  .auk-toolbar__spacer {
-    flex: 1 1 auto;
-  }
+.auk-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.auk-toolbar__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.auk-toolbar__spacer {
+  flex: 1 1 auto;
+}
