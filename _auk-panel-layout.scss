@@ -8,14 +8,20 @@
   min-height: 0;
 }
 
-.auk-panel-layout__agenda-history {
-  width: 20rem;
+.auk-panel-layout__main-content {
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+}
+
+.auk-panel-layout__sidebar {
+  position: relative;
+  flex: 0 0 auto;
   height: 100%;
 }
 
-.auk-panel-layout__agenda-history--collapsed {
-  width: 8rem;
-}
+/* Agenda items
+  ========================================================================== */
 
 .auk-panel-layout__agenda-items {
   width: 32rem;
@@ -39,16 +45,4 @@
       width: 44rem;
     }
   }
-}
-
-.auk-panel-layout__main-content {
-  flex: 1;
-  height: 100%;
-  min-width: 0;
-}
-
-.auk-panel-layout__sidebar {
-  position: relative;
-  flex: 0 0 auto;
-  height: 100%;
 }
