@@ -79,6 +79,10 @@
   th {
     color: $au-gray-900;
   }
+
+  .auk-table__cell--accent {
+    background-color: $au-gray-100;
+  }
 }
 
 .auk-table tr .auk-table__cell--gray-100 {
