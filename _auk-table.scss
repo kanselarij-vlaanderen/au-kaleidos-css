@@ -11,8 +11,8 @@
 .auk-table td,
 .auk-table th {
   vertical-align: middle;
-  padding: 1.2rem 0.6rem;
-  border-bottom: .1rem solid $au-gray-300;
+  padding: 1.2rem 1rem;
+  border-bottom: 0.1rem solid $au-gray-300;
 }
 
 .auk-table tr td:first-child,
@@ -26,7 +26,7 @@
 }
 
 .auk-table th {
-  border-bottom-width: .2rem;
+  border-bottom-width: 0.2rem;
   text-align: left;
   font-weight: 500;
   color: $au-gray-600;
@@ -37,7 +37,7 @@
 }
 
 .auk-table tr:last-child td {
-  border-bottom-width: 0
+  border-bottom-width: 0;
 }
 
 .auk-table__header--actions,
@@ -49,22 +49,25 @@
   float: right;
 }
 
+.auk-table__row--collapsed-content td {
+  background: $au-gray-100;
+}
+
 .auk-table {
   // If button toolbar appears in first column
   tr td:first-child .auk-button-toolbar {
-      justify-content: flex-start;
+    justify-content: flex-start;
   }
   .auk-button-toolbar {
     justify-content: flex-end;
   }
 }
 
-
 .auk-table code {
-  background-color: #EEE;
+  background-color: #eee;
   color: #905;
-  padding: .2rem .4rem;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  padding: 0.2rem 0.4rem;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1.3rem;
 }
 
@@ -75,22 +78,30 @@
 .auk-table--advanced {
   th {
     color: $au-gray-900;
-    background-color: $au-gray-200;
-  }
-
-  .auk-table__cell--accent {
-    background-color: $au-gray-100;
   }
 }
 
-.auk-table--disable-bottom-border {
-  .data-table__actions {
-    border-bottom: 0px solid black;
-  }
+.auk-table tr .auk-table__cell--gray-100 {
+  background: $au-gray-100;
+}
+
+/* Status cells
+  ========================================================================== */
+
+.auk-table tr .auk-table__cell--success {
+  background: $au-green-200;
+  color: $au-green-700;
+  text-align: center;
+}
+
+.auk-table tr .auk-table__cell--warning {
+  background: $au-yellow-200;
+  color: $au-yellow-600;
+  text-align: center;
 }
 
 /* Table columns
-   ========================================================================== */
+  ========================================================================== */
 
 $tableColCount: 12;
 $i: 1;
