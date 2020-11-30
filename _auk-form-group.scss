@@ -44,3 +44,17 @@
   }
 
 }
+
+.auk-form-group--grid {
+  display: grid;
+  grid-gap: 1rem;
+
+  div {
+    &:first-child {
+      grid-column-start: 1;
+    }
+    &:nth-child(2){
+      grid-column-start: 2;
+    }
+  }
+}
