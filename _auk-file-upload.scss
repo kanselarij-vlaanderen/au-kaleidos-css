@@ -50,9 +50,17 @@
 }
 
 .auk-file-upload__link {
-  margin: 0 0 0.5rem;
+  margin: 0 0 .5rem;
   display: inline-flex;
   align-items: center;
-  color: #0E5EB8;
-  text-decoration: underline;
+
+  span {
+    color: $au-blue-700;
+    text-decoration: underline;
+  }
+
+  .auk-icon {
+    margin-right: 0.5rem;
+    color: $au-gray-500;
+  }
 }
