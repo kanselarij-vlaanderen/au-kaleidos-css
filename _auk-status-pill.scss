@@ -43,7 +43,10 @@
 }
 
 .auk-status-pill--error {
+  background-color: $au-red-200;
+  border: 0.1rem solid $au-red-200;
+  color: $au-red-700;
   .auk-icon {
-    color: $au-red-600;
+    color: $au-red-700;
   }
 }
