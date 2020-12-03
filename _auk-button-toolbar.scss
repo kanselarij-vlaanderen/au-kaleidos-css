@@ -7,8 +7,10 @@
   align-items: center;
 }
 
-.auk-button-toolbar .auk-button {
-  margin-right: 1rem;
+.auk-button-toolbar {
+  .auk-button + .auk-button {
+    margin-left: 1rem;
+  }
 }
 
 .auk-button-toolbar .auk-button:last-child {
