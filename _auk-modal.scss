@@ -39,13 +39,18 @@
 .auk-modal__header,
 .auk-modal__content,
 .auk-modal__footer {
-  flex: 0 0 auto;
   background: #fff;
+}
+
+.auk-modal__header,
+.auk-modal__footer {
+  flex: 0 0 auto;
 }
 
 .auk-modal__content {
   padding: 2rem;
   overflow: auto;
+  flex: 1 1 auto;
   max-height: calc(100vh - 4rem);
 }
 
