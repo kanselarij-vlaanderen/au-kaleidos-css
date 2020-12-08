@@ -16,7 +16,15 @@
   font-weight: 500;
   margin: 0;
   display: inline;
-  padding-right: .6rem;
+  padding-right: 0.6rem;
+}
+
+.auk-toolbar-complex__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+  color: $au-gray-800;
 }
 
 .auk-toolbar-complex__title--small {
