@@ -1,3 +1,8 @@
+/* ==========================================================================
+  Stylesheet for Kaleidos
+   ========================================================================== */
+
+// Components
 @import 'auk-accordion';
 @import 'auk-alert';
 @import 'auk-app-title';
@@ -39,8 +44,8 @@
 @import 'auk-progress-bar';
 @import 'auk-radio';
 @import 'auk-scroll-wrapper';
-@import 'auk-select';
 @import 'auk-search-results-list';
+@import 'auk-select';
 @import 'auk-sidebar';
 @import 'auk-status-pill';
 @import 'auk-table';
@@ -50,7 +55,12 @@
 @import 'auk-toolbar-complex';
 @import 'auk-toolbar';
 @import 'auk-tooltip';
+
+// Objects
+@import 'auk-o-grid';
+@import 'o-flex';
+
+// Utilities
 @import 'auk-u-cursors';
 @import 'auk-u-spacer';
 @import 'auk-u-text';
-@import 'o-flex';
