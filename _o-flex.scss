@@ -10,10 +10,14 @@
 $o-flex-gutter-width: 0.8rem !default;
 
 /* Utility classes
-  ========================================================================== */
+     ========================================================================== */
 
 .o-flex {
   display: flex;
+}
+
+.o-flex--inline {
+  display: inline-flex;
 }
 
 .o-flex--vertical {
@@ -65,20 +69,16 @@ $o-flex-gutter-width: 0.8rem !default;
   align-self: flex-start;
 }
 
-.o-flex--spaced {
-  & > *:not(:last-child) {
-    margin-right: $o-flex-gutter-width;
-  }
+.o-flex--spaced > *:not(:last-child) {
+  margin-right: $o-flex-gutter-width;
 }
 
-.o-flex--spaced-wide {
-  & > *:not(:last-child) {
-    margin-right: $o-flex-gutter-width * 2;
-  }
+.o-flex--spaced-wide > *:not(:last-child) {
+  margin-right: $o-flex-gutter-width * 2;
 }
 
 /* Flexible items
-  ========================================================================== */
+     ========================================================================== */
 
 .o-flex__item {
   flex: 1;
