@@ -31,6 +31,10 @@
   @include button-focus;
 }
 
+.auk-button__label {
+  font-size: 1.6rem;
+}
+
 .auk-button {
   .auk-icon + .auk-button__label,
   .auk-button__label + .auk-icon {
