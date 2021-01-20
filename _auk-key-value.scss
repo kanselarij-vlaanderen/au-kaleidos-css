@@ -1,6 +1,5 @@
 /* ==========================================================================
-  Key value
-  The logic for the widths is: [short, medium, long, very long] where medium is the default
+  auk-key-value
    ========================================================================== */
 
 .auk-key-value-item__label {
@@ -15,9 +14,9 @@
 }
 
 .auk-key-value-item--horizontal {
-    display: flex;
-    align-items: center;
-    height: 3.5rem;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
 
   .auk-key-value-item__label {
     width: 45%;
