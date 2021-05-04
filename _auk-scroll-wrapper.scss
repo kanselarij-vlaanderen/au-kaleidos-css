@@ -6,11 +6,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .auk-scroll-wrapper__body {
-  margin-bottom: 5rem;
-  overflow: scroll;
+  overflow: auto;
   flex: 1;
   height: 100%;
 }

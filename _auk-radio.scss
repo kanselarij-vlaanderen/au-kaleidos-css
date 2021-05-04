@@ -51,6 +51,6 @@
 
 .auk-radio input[type='radio']:focus ~ .auk-radio__box,
 .auk-radio input[type='radio']:active ~ .auk-radio__box {
-  border-color: $au-yellow-400;
-  box-shadow: 0 0 0 0.1rem $au-yellow-400;
+  border-color: $au-yellow-500;
+  box-shadow: 0 0 0 0.1rem $au-yellow-500;
 }
