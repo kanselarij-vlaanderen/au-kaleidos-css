@@ -1,0 +1,22 @@
+/* ==========================================================================
+    Component: Color badge
+   ========================================================================== */
+
+.auk-color-badge {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  border-radius: 0.2rem;
+}
+
+.auk-color-badge--warning {
+  background: $au-yellow-500;
+}
+
+.auk-color-badge--error {
+  background: $au-red-500;
+}
+
+.auk-color-badge--success {
+  background: $au-green-500;
+}
