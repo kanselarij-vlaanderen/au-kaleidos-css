@@ -25,10 +25,10 @@
   }
 }
 
-/* Skins
+/* Icon variant
    ========================================================================== */
 
-.auk-avatar--default {
+.auk-avatar--icon {
   background: $au-gray-200;
   color: #666;
 }
@@ -37,7 +37,6 @@
    ========================================================================== */
 
 .auk-avatar--img {
-  background: none;
   overflow: hidden;
 
   img {
