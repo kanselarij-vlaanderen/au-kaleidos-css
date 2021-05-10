@@ -1,16 +1,37 @@
 /* ==========================================================================
   auk-progress-bar
+  ---
+  Progress bar that changes width AND color using a CSS variable
+  By Lea verou - http://dabblet.com/gist/9ef99ce3555ba569c24c7532ef37dc9a
    ========================================================================== */
 
 .auk-progress-bar {
+  display: flex;
+  align-items: center;
   width: 100%;
+}
+
+.auk-progress-bar__value {
+  font-size: 1.4rem;
+  color: $au-gray-600;
+}
+
+.auk-progress-bar__bar + .auk-progress-bar__value {
+  margin-left: 1rem;
+}
+
+.auk-progress-bar__bar {
+  display: flex;
+  flex: 1;
+  height: 0.4rem;
   background-color: $au-gray-300;
 }
 
-.auk-progress-bar__progress {
-  height: .4rem;
-  background-color: $au-blue-600;
-  animation: fill 1s linear 1;
+.auk-progress-bar__bar:before {
+  content: "";
+  width: calc(var(--value) * 100%);
+  background: $au-blue-600;
+  animation: fill 250ms linear 1;
 }
 
 @keyframes fill {
@@ -18,6 +39,12 @@
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: var(--value);
+  }
+}
+
+.auk-progress-bar--success {
+  .auk-progress-bar__bar:before {
+    background: $au-green-500;
   }
 }

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Variables
+   ---
+   Global SCSS variables (override default values defined in component files)
+   ========================================================================== */
+
+/* Typography
+   ========================================================================== */
+
+$g-base-font-family: flanders-sans, sans-serif;
+$g-code-font-family: Consolas, "Lucida Console", "Lucida Sans Typewriter",
+  "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono",
+  "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$g-base-font-size: 1.5rem;
+$g-base-line-height: 1.5;
+$g-headings-font-weight: 500;
+$g-headings-font-family: flanders-sans, sans-serif;
+
+/* Colors
+   ========================================================================== */
+
+$g-text-color: $color-text;
+$g-headings-color: $color-header;
+$g-base-background: #fff;
+
+/* Breakpoints
+   ========================================================================== */
+
+$g-bp1: 400px;
+$g-bp2: 700px;
+$g-bp3: 900px;
+$g-bp4: 1200px;
+$g-bp5: 1600px;
+
+/* Bars
+   ========================================================================== */
+
+$g-bar-size-regular: 5rem;
+$g-bar-size-small: 4rem;
+$g-bar-size-medium: 5rem;
+$g-bar-size-large: 6.5rem;
+
+/* General
+   ========================================================================== */
+
+$g-spacer-unit: 0.5rem;
+

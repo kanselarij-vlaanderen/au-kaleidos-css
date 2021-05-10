@@ -58,15 +58,17 @@
 @import 'auk-textarea';
 @import 'auk-toolbar-complex';
 @import 'auk-toolbar';
-@import 'auk-tooltip';
 
 // Objects
 @import 'auk-o-grid';
+@import 'auk-o-flex';
 
 // Utilities
 @import 'auk-u-cursors';
-@import 'auk-u-flex';
 @import 'auk-u-generic';
 @import 'auk-u-scroll';
 @import 'auk-u-spacer';
 @import 'auk-u-text';
+
+// Plugins
+@import 'ember-tooltip';

@@ -4,14 +4,39 @@
   Dropdown menu
    ========================================================================== */
 
+/* Variables
+  ========================================================================== */
+
+$g-auk-menu-z: 60 !default;
+
+/* Component
+  ========================================================================== */
+
 .auk-menu {
   background: #FFF;
-  min-width: 22rem;
+  min-width: 23rem;
   padding: 1rem 0;
+  border: 0.1rem solid $au-gray-200;
+  border-radius: 0.3rem;
+  filter: drop-shadow(0px 0px 8px rgba(33, 33, 33, 0.25));
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: $g-auk-menu-z;
+  right: 0;
+}
+
+.auk-menu--picker {
+  .auk-menu__item {
+    color: $au-gray-800;
+    &:hover {
+      color: $au-gray-800;
+    }
+  }
 }
 
 .auk-menu__item {
-  color: $au-blue-700;
+  color: $au-blue-600;
   text-decoration: none;
   display: flex;
   padding: 0.8rem 1.6rem;
@@ -27,7 +52,7 @@
 }
 
 .auk-menu__item--danger {
-  color: $au-red-600;
+  color: $au-red-500;
   &:hover {
     color: $au-red-500;
   }
@@ -38,5 +63,18 @@
   display: block;
   margin-top: .4rem;
   padding-top: .4rem;
+}
+
+.auk-menu--large {
+  min-width: 27rem;
+}
+
+.auk-menu.auk-menu--visible.js-no-action {
+  position: static;
+}
+
+.auk-menu--visible {
+  opacity: 1;
+  visibility: visible;
 }
 

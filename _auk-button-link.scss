@@ -15,11 +15,12 @@
   // Build styles
   font-family: flanders-sans,  sans-serif;
   font-size: 1.6rem;
-  color: $au-blue-700;
+  font-weight: 500;
+  color: $au-blue-600;
   display: flex;
   &:hover,
   &:active {
-    color: $au-blue-600;
+    color: $au-blue-700;
   }
   &:focus {
     outline: 0;
@@ -38,7 +39,7 @@
   }
 }
 
-.auk-button-link--muted {
+.auk-button-link.auk-button--muted {
   color: $au-gray-600;
   &:hover,
   &:active {

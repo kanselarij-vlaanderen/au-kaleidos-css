@@ -29,3 +29,41 @@
 .auk-list__item--gray-100 {
   background: $au-gray-100;
 }
+
+
+.auk-list--view {
+  .auk-list__item {
+    border-bottom: 0.1rem solid $au-gray-300;
+    padding: .75rem 1rem;
+    margin: 0;
+    min-height: 6rem;
+    
+    .auk-button {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .auk-list__item--gray-100 {
+    background: $au-gray-100;
+    border-color: #fff;
+  }
+  
+}
+
+.auk-list--view a {
+  &:hover,
+  &:focus {
+    background-color: $au-gray-100;
+    .auk-avatar,
+    .auk-badge {
+      background-color: $au-blue-100;
+    }
+    span {
+      color: $au-blue-600;
+    }
+  }
+}

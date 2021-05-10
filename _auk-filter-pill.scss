@@ -1,0 +1,67 @@
+/* ==========================================================================
+  auk-filter-pill
+   ========================================================================== */
+
+.auk-filter-pill {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 .5rem 0 .6rem;
+  border-radius: .5rem;
+  height: 2.4rem;
+  color: $au-gray-600;
+  background: $au-gray-100;
+  border: .1rem solid $au-gray-300;
+}
+
+.auk-filter-pill .auk-icon--close {
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.8rem;
+  position: relative;
+  padding-left: .3rem;
+  margin-left: .5rem;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    height: 2.2rem;
+    width: 0.1rem;
+    background-color: $au-gray-300;
+  }
+}
+
+.auk-filter-pill__second-label {
+  font-weight: 400;
+  margin-left: .5rem;
+}
+
+.auk-filter-pill__multiple-labels {
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: $au-gray-600;
+  color: #fff;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5rem;
+}
+
+/* auk-pill-list
+  ========================================================================== */
+
+.auk-filter-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .auk-filter-pill:not(:first-of-type) {
+    margin-left: .5rem;
+  }
+}

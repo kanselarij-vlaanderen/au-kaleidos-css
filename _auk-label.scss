@@ -9,10 +9,17 @@
   padding-bottom: .6rem;
 }
 
+.auk-label--light {
+  font-weight: 400;
+  color: $au-gray-600;
+  padding-bottom: .3rem;
+}
+
 .auk-label--error {
   color: $au-red-700;
 }
 
 .auk-label abbr {
   opacity: 0.5;
-  }
+}
+

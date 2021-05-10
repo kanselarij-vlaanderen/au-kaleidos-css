@@ -2,6 +2,49 @@
   auk-modal
    ========================================================================== */
 
+/* Variables
+   ========================================================================== */
+
+$auk-modal-padding-horizontal: 2.4rem !default;
+$auk-modal-padding-vertical: 2.4rem !default;
+$auk-modal-border-radius: 0.4rem !default;
+$auk-modal-shadow-color: $au-gray-600 !default;
+
+$auk-modal-header-bg-color: #fff !default;
+$auk-modal-footer-bg-color: #fff !default;
+$auk-modal-header-border-color: $au-gray-300 !default;
+$auk-modal-footer-border-color: $au-gray-300 !default;
+
+$g-auk-modal-backdrop-z: 30 !default;
+$g-auk-modal-context-z: 40 !default;
+
+/* Component
+  ========================================================================== */
+
+.auk-modal-context {
+  display: flex;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(-4rem) scale(0.98);
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear,
+    transform 0.2s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: $g-auk-modal-context-z;
+  align-items: center;
+  justify-content: center;
+
+  &.auk-modal-context--visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+    visibility: visible;
+  }
+}
+
 .auk-modal {
   z-index: $z-index-modal;
   position: relative;
@@ -22,6 +65,7 @@
 
 .auk-modal__header {
   padding: 0 2rem;
+  border-radius: .3rem .3rem 0 0;
 }
 
 .auk-modal__header--bordered {
@@ -30,6 +74,7 @@
 
 .auk-modal__footer {
   padding: 0 2rem;
+  border-radius: 0 0 .3rem .3rem;
 }
 
 .auk-modal__footer--bordered {
@@ -37,6 +82,7 @@
 }
 
 .auk-modal__header,
+.auk-modal__body,
 .auk-modal__content,
 .auk-modal__footer {
   background: #fff;
@@ -47,9 +93,10 @@
   flex: 0 0 auto;
 }
 
+.auk-modal__body,
 .auk-modal__content {
-  padding: 2rem;
-  overflow: auto;
+  flex: 0 1 auto;
+  // overflow: auto;
   max-height: calc(100vh - 4rem);
 }
 
@@ -80,6 +127,7 @@
   right: 0;
   width: 100%;
   height: 100%;
+  .auk-modal__body,
   .auk-modal__content {
     height: 100%;
     flex: 1 1 auto;
@@ -102,4 +150,45 @@
   width: 100%;
   height: 100%;
   z-index: $z-index-modal-backdrop;
+}
+
+.auk-modal-backdrop {
+  background: rgba($au-gray-900, 0.2);
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+  left: 0;
+  visibility: hidden;
+  z-index: $g-auk-modal-backdrop-z;
+
+  &.auk-modal-backdrop--visible {
+    opacity: 1;
+    transition-delay: 0s;
+    visibility: visible;
+  }
+}
+
+.auk-modal-context + .auk-modal-context {
+  background: rgba($au-gray-900, 0.2);
+}
+
+/* Types
+   ========================================================================== */
+
+.auk-modal--footerless {
+  .auk-modal__body,
+  .auk-modal__content {
+    border-radius: 0 0 .3rem .3rem ;
+  }
+}
+
+.auk-modal--headerless {
+  .auk-modal__body,
+  .auk-modal__content {
+    border-radius: .3rem .3rem 0 0;
+  }
 }

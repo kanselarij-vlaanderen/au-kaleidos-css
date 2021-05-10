@@ -24,11 +24,7 @@
   width: 1.8rem;
   border-radius: 100%;
   border: .1rem solid $au-gray-300;
-}
-
-.auk-radio input[type='radio']:checked ~ .auk-radio__box {
-  background: $au-blue-700;
-  border-color: $au-blue-700;
+  transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
   &:before {
     content: "";
     background-color: $au-gray-100;
@@ -38,6 +34,19 @@
     top: (.8rem) / 2;
     left: (.8rem) / 2;
     border-radius: 100%;
+    opacity: 0;
+    transform: scale(.2);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  }
+}
+
+.auk-radio input[type='radio']:checked ~ .auk-radio__box {
+  background: $au-blue-700;
+  border-color: $au-blue-700;
+  opacity: 1;
+  &:before {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

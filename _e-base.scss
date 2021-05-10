@@ -11,14 +11,17 @@ html {
 }
 
 body {
-  color: $au-gray-800;
-  line-height: 1.375;
+  color: $color-text;
+  line-height: 1.6;
   font-family: flanders-sans, sans-serif;
   font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none; 
 }
 
 a {
-  color: $au-blue-700;
+  color: $au-blue-600;
 }
 
 strong {
@@ -32,9 +35,9 @@ i, em {
 hr {
   border: none;
   border-top: .1rem solid $au-gray-300;
+  margin: 0;
 }
 
 abbr[title] {
   text-decoration: none;
-  opacity: 0.5;
 }

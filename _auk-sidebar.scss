@@ -130,7 +130,8 @@
 /* Responsive panel layout
       ========================================================================== */
 
-.auk-sidebar--responsive.auk-sidebar[data-collapsed='false'] {
+.auk-sidebar--responsive.auk-sidebar[data-collapsed='false'],
+.auk-sidebar--responsive.auk-sidebar:not(.auk-sidebar--collapsed) {
   position: absolute;
   top: 0;
   right: 0;
@@ -139,7 +140,8 @@
 }
 
 @media (min-width: 1680px) {
-  .auk-sidebar--responsive.auk-sidebar[data-collapsed='false'] {
+  .auk-sidebar--responsive.auk-sidebar[data-collapsed='false'],
+  .auk-sidebar--responsive.auk-sidebar:not(.auk-sidebar--collapsed)  {
     position: initial;
     box-shadow: none;
   }

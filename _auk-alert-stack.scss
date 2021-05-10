@@ -16,3 +16,21 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   }
 }
+
+/* Animations
+   ========================================================================== */
+
+.auk-alert-stack {
+  animation: 0.3s ease-out 5s both floating-alert-out;
+}
+
+@keyframes floating-alert-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}

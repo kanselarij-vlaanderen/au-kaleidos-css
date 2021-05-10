@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .auk-form-group {
-  margin: 0 0 1.8rem;
+  margin: 0 0 2rem;
 }
 
 .auk-form-group:last-child {
@@ -19,10 +19,7 @@
   .auk-label {
     width: 45%;
     max-width: 22rem;
-    padding: 0;
     display: flex;
-    align-items: center;
-    align-self: center;
   }
 
   select,
@@ -31,7 +28,19 @@
     flex: 1 1 auto;
   }
 
+  .auk-form-group-layout--standard {
+
+    .auk-form-group {
+      display: block;
+    }
+    .auk-label {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
 }
+
 
 .auk-form-group--error {
 
@@ -56,5 +65,13 @@
     &:nth-child(2){
       grid-column-start: 2;
     }
+  }
+}
+
+.auk-form-group--required {
+ label:after {
+    content:"*";
+    color: $au-gray-400;
+    margin-left: .25rem;
   }
 }

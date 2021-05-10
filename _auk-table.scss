@@ -60,6 +60,11 @@
   }
   .auk-button-toolbar {
     justify-content: flex-end;
+    flex-wrap: nowrap;
+    .auk-button {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -93,13 +98,13 @@
   ========================================================================== */
 
 .auk-table tr .auk-table__cell--success {
-  background: $au-green-200;
+  background: $au-green-100;
   color: $au-green-700;
   text-align: center;
 }
 
 .auk-table tr .auk-table__cell--warning {
-  background: $au-yellow-200;
+  background: $au-yellow-100;
   color: $au-yellow-700;
   text-align: center;
 }
@@ -117,3 +122,54 @@ $i: 1;
 
   $i: $i + 1;
 }
+
+.auk-table-checkbox-col {
+  width: 2rem; // Minimize width
+}
+
+/* Table with clickable rows
+   ========================================================================== */
+
+   .auk-table tr[data-href]:hover {
+    background: $au-gray-100;
+    cursor: pointer;
+  }
+  
+  .auk-table--rows-clickable tr:focus-within td {
+    background-color: $au-gray-100;
+  }  
+
+/* Table with batch edit
+   ========================================================================== */
+
+.auk-table--batch-edit td {
+  background: $au-gray-100;
+}
+
+/* Table sorter
+   ========================================================================== */
+
+   .auk-table-sorter {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    appearance: none;
+    background: none;
+    border: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  
+    &:hover,
+    &:active {
+      color: $au-blue-600;
+    }
+    &:focus {
+      outline: 0;
+      border-color: $au-yellow-500;
+      box-shadow: inset 0 0 0 0.2rem $au-yellow-500;
+    }
+  }

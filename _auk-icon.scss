@@ -15,12 +15,11 @@
   }
 }
 
+/* Size Variations
+   ========================================================================== */
+
 .auk-icon--default {
   font-size: 1.8rem;
-}
-
-.auk-icon--light {
-  color: #8c8c8c;
 }
 
 .auk-icon--large {
@@ -28,10 +27,21 @@
 }
 
 .auk-icon--small {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+}
+
+/* Color Variations
+   ========================================================================== */
+
+.auk-icon--primary {
+  color: $au-blue-600;
 }
 
 .auk-icon--muted {
+  color: $au-gray-400;
+}
+
+.auk-icon--muted-dark {
   color: $au-gray-600;
 }
 
@@ -48,5 +58,9 @@
 }
 
 .auk-icon--danger {
-  color: $au-red-600;
+  color: $au-red-500;
+}
+
+.auk-icon--success-dark {
+  color: $au-green-700;
 }

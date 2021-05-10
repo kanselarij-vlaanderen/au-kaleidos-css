@@ -29,39 +29,37 @@ $au-gray-800    : #2A2D31;
 $au-gray-900    : #212326;
 $au-gray-1000   : #000000;
 
-$au-blue-100    : #EDF6FF;
-$au-blue-200    : #DCECFD;
-$au-blue-300    : #C1DDFB;
-$au-blue-600    : #0F6FD7;
-$au-blue-700    : #0E5EB8;
-$au-blue-900    : #073261;
+$au-blue-100    : #D4E3F7;
+$au-blue-600    : #0055CC;
+$au-blue-700    : #004099;
+$au-blue-800    : #002A64;
 
-$au-yellow-100  : #FFF9D5;
-$au-yellow-200  : #FFF29B;
-$au-yellow-300  : #FEE539;
+$au-yellow-100  : #FCF1CF;
+$au-yellow-300  : #FEE85C;
 $au-yellow-500  : #FFC515;
 $au-yellow-700  : #997300;
-$au-yellow-900  : #473D21;
+$au-yellow-800  : #664D00;
+$au-brand       : #FEEA52;
 
-$au-red-100     : #FCF3F3;
-$au-red-200     : #F7E3E3;
+$au-red-50      : #FBE9E9;
+$au-red-100     : #F7D4D4;
+$au-red-300     : #E87878;
 $au-red-500     : #DB3434;
-$au-red-600     : #D92626;
-$au-red-700     : #AB1F1F;
-$au-red-900     : #470000;
+$au-red-700     : #990000;
+$au-red-800     : #5E0000;
 
 $au-green-100   : #F7FAE5;
-$au-green-200   : #ECF2CD;
-$au-green-400   : #B3E000;
+$au-green-300   : #D8E878;
 $au-green-500   : #8BAE00;
 $au-green-700   : #238000;
-$au-green-900   : #030303;
+$au-green-800   : #165100;
+
 
 /* Semantic colors
  ========================================================================== */
-
+ 
 $color-primary: $au-blue-600;
-$color-header:$au-gray-900;
+$color-header: $au-gray-900;
 $color-text: $au-gray-800;
 $color-muted: $au-gray-600;
 $color-border: $au-gray-300;
