@@ -7,19 +7,22 @@
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  padding: 0 .6rem;
-  border-radius: .6rem;
+  padding: 0 .7rem;
+  border-radius: .5rem;
   height: 2.4rem;
 }
 
 .auk-pill .auk-icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: .5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.6rem;
+  margin-right: .3rem;
 }
 
 .auk-pill--icon-only {
   padding: 0 .3rem;
+  width: 2.4rem;
+  justify-content: center;
   .auk-icon {
     margin: 0;
   }
@@ -27,7 +30,7 @@
 
 .auk-pill--icon-right {
   .auk-icon {
-    margin-left: .6rem;
+    margin-left: .3rem;
     margin-right: 0;
   }
 }
@@ -35,6 +38,12 @@
 .auk-pill--default {
   color: $au-gray-600;
   background: $au-gray-100;
+  border: .1rem solid $au-gray-300;
+}
+
+.auk-pill--white {
+  color: $au-gray-600;
+  background: #FFF;
   border: .1rem solid $au-gray-300;
 }
 
@@ -49,6 +58,9 @@
 }
 
 .auk-pill--warning {
-  color: #000;
+  color: $color-text;
   background: $au-yellow-500;
+  .auk-icon {
+    color: $au-yellow-700;
+  }
 }

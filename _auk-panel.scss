@@ -5,6 +5,12 @@
 .auk-panel {
   background: #FFF;
   border: .1rem solid #C6CDD3;
+  border-radius: .3rem;
+  overflow: hidden;
+}
+
+.auk-panel--gray-100 {
+  background: $au-gray-100;
 }
 
 .auk-panel__header {
@@ -16,7 +22,7 @@
 
   .auk-panel__title {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
   }
 }
