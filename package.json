@@ -5,8 +5,8 @@
   "main": "auk-standalone.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch auk-standalone.scss:auk-standalone.css auk-base.scss:auk-base.css",
-    "build": "sass auk-standalone.scss auk-standalone.css && sass auk-base.scss auk-base.css",
+    "dev": "sass --watch auk-standalone.scss:css/auk-standalone.css auk-base.scss:css/auk-base.css",
+    "build": "sass auk-standalone.scss css/auk-standalone.css && sass auk-base.scss css/auk-base.css",
     "prepare": "npm run build"
   },
   "keywords": [],
