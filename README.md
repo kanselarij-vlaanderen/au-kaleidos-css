@@ -4,8 +4,7 @@ AU Kaleidos SCSS as a separate package.
 
 This package consists of 2 SCSS files.
 
-The standalone file is built upon publishing to npm.
+* auk-base.scss
+* auk-components.scss
 
-## Note on source files
-
-The `au-kaleidos.scss` file is meant to be imported into a larger codebase, where global variables (like the colors included in this package) are maintained globally.
+Both need to be loaded to have complete CSS.
