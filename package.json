@@ -8,7 +8,7 @@
     "clean": "rm css/auk-standalone.css && rm css/auk-base.css",
     "dev": "npm run clean && sass --watch auk-standalone.scss:css/auk-standalone.css auk-base.scss:css/auk-base.css",
     "build": "npm run clean && sass auk-standalone.scss css/auk-standalone.css && sass auk-base.scss css/auk-base.css",
-    "prepare": "npm run clean && npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
