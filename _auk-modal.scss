@@ -63,6 +63,13 @@ $g-auk-modal-context-z: 40 !default;
   flex: 1 0 auto;
 }
 
+.auk-modal__content {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  max-height: calc(100vh - 4rem);
+}
+
 .auk-modal__header {
   padding: 0 2rem;
   border-radius: .3rem .3rem 0 0;
@@ -70,6 +77,11 @@ $g-auk-modal-context-z: 40 !default;
 
 .auk-modal__header--bordered {
   border-bottom: 0.1rem solid $au-gray-300;
+}
+
+.auk-modal__body {
+  flex: 0 1 auto;
+  overflow: auto;
 }
 
 .auk-modal__footer {
@@ -90,13 +102,6 @@ $g-auk-modal-context-z: 40 !default;
 .auk-modal__header,
 .auk-modal__footer {
   flex: 0 0 auto;
-}
-
-.auk-modal__body,
-.auk-modal__content {
-  flex: 0 1 auto;
-  // overflow: auto;
-  max-height: calc(100vh - 4rem);
 }
 
 /* Sizes
