@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* ==========================================================================
   auk-radio
    ========================================================================== */
@@ -31,8 +33,8 @@
     position: absolute;
     height: .8rem;
     width: .8rem;
-    top: (.8rem) / 2;
-    left: (.8rem) / 2;
+    top: math.div(.8rem, 2);
+    left: math.div(.8rem, 2);
     border-radius: 100%;
     opacity: 0;
     transform: scale(.2);

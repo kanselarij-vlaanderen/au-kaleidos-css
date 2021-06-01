@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* ==========================================================================
   Grid
   ---
@@ -19,8 +21,8 @@ $auk-o-grid-bp4: 1200px;
 .auk-o-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -($auk-o-grid-column-gap / 2);
-  margin-right: -($auk-o-grid-column-gap / 2);
+  margin-left: -(math.div($auk-o-grid-column-gap, 2));
+  margin-right: -(math.div($auk-o-grid-column-gap, 2));
 }
 
 /* Grid columns (default)
@@ -29,8 +31,8 @@ $auk-o-grid-bp4: 1200px;
 [class*='auk-o-grid-col'] {
   flex: 1 0 auto;
   min-width: 0;
-  margin-left: $auk-o-grid-column-gap / 2;
-  margin-right: $auk-o-grid-column-gap / 2;
+  margin-left: math.div($auk-o-grid-column-gap, 2);
+  margin-right: math.div($auk-o-grid-column-gap, 2);
 }
 
 // Activate columns regardless of breakpoint
@@ -38,7 +40,7 @@ $i: 0;
 
 @while($i < $auk-o-grid-columns) {
   .auk-o-grid-col-#{$i + 1} {
-    width: calc(#{( ( $i + 1 ) / $auk-o-grid-columns ) * 100}% - #{$auk-o-grid-column-gap});
+    width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
     flex: 1 1 auto;
   }
   $i: $i + 1;
@@ -55,7 +57,7 @@ $i: 0;
 
   @while($i < $auk-o-grid-columns) {
     .auk-o-grid-col-bp1-#{$i + 1} {
-      width: calc(#{( ( $i + 1 ) / $auk-o-grid-columns ) * 100}% - #{$auk-o-grid-column-gap});
+      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
     }
     $i: $i + 1;
   }
@@ -72,7 +74,7 @@ $i: 0;
 
   @while($i < $auk-o-grid-columns) {
     .auk-o-grid-col-bp2-#{$i + 1} {
-      width: calc(#{( ( $i + 1 ) / $auk-o-grid-columns ) * 100}% - #{$auk-o-grid-column-gap});
+      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
     }
     $i: $i + 1;
   }
@@ -89,7 +91,7 @@ $i: 0;
 
   @while($i < $auk-o-grid-columns) {
     .auk-o-grid-col-bp3-#{$i + 1} {
-      width: calc(#{( ( $i + 1 ) / $auk-o-grid-columns ) * 100}% - #{$auk-o-grid-column-gap});
+      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
     }
     $i: $i + 1;
   }
