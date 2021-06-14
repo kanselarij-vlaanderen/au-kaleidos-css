@@ -101,7 +101,8 @@
   margin: 0 0.6rem;
 }
 
-.auk-tabs__hierarchical-back a.active {
+.auk-tabs__hierarchical-back a.active,
+.auk-tabs__hierarchical-back.auk-tabs__tab--active a {
   color: $au-blue-600;
   border: none;
 }
