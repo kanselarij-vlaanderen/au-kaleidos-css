@@ -206,7 +206,7 @@ a.auk-button {
   transition: box-shadow 0.2s;
   &:hover,
   &:active {
-    color: $au-red-500;
+    color: $au-red-700;
     box-shadow: inset 0 0 0 0.2rem $au-red-700;
   }
 }
@@ -217,8 +217,16 @@ a.auk-button {
   background: none;
   &:hover,
   &:active {
-    color: $au-red-500;
     box-shadow: inset 0 0 0 0.1rem $au-red-500;
+    color: $au-red-700;
+  }
+}
+
+.auk-button--danger-borderless {
+  color: $au-red-500;
+  &:hover,
+  &:active {
+    color: $au-red-700;
   }
 }
 
