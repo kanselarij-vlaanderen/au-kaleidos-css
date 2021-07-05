@@ -106,3 +106,8 @@
   color: $au-blue-600;
   border: none;
 }
+
+// the following selector can be, if needed, extended with something like `.auk-tabs__label:empty`
+.auk-tabs__hierarchical-back .auk-tabs__label { 
+  display: none;
+}
