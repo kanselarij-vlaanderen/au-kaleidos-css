@@ -1,7 +1,7 @@
 /* ==========================================================================
    Component: Menu
    ---
-  Dropdown menu
+   Dropdown menu
    ========================================================================== */
 
 /* Variables
@@ -43,6 +43,17 @@ $g-auk-menu-z: 60 !default;
     background-color: $au-gray-100;
     color: $au-blue-600;
   }
+
+  &:focus {
+    outline: 0;
+    border-color: $au-yellow-500;
+    box-shadow: inset 0 0 0 0.1rem $au-yellow-500;
+  }
+}
+
+.auk-menu__item--disabled {
+  color: $au-gray-400;
+  pointer-events: none;
 }
 
 .auk-menu__item--text-only {
@@ -51,7 +62,9 @@ $g-auk-menu-z: 60 !default;
 
 .auk-menu__item--danger {
   color: $au-red-500;
-  &:hover {
+
+  &:hover,
+  &:focus {
     color: $au-red-500;
   }
 }
