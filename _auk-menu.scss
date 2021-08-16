@@ -13,8 +13,6 @@ $g-auk-menu-z: 60 !default;
   ========================================================================== */
 
 .auk-menu {
-  font-weight: 400;
-  text-align: start;
   background: #FFF;
   min-width: 23rem;
   padding: 1rem 0;
@@ -24,6 +22,12 @@ $g-auk-menu-z: 60 !default;
   opacity: 0;
   visibility: hidden;
   // z-index: $g-auk-menu-z;
+
+  // reset styling (if enclosed within a button for example)
+  font-weight: 400;
+  color: $color-text;
+  white-space: normal;
+  text-align: start;
 }
 
 .auk-menu--picker {
