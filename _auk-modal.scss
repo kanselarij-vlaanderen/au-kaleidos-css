@@ -131,13 +131,24 @@ $g-auk-modal-context-z: 40 !default;
   right: 0;
   width: 100%;
   height: 100%;
+
   .auk-modal__body,
   .auk-modal__content {
     height: 100%;
     flex: 1 1 auto;
   }
+
+  .auk-modal__content {
+    max-height: none;
+  }
+
   .auk-modal__push {
     display: none;
+  }
+
+  .auk-modal__header,
+  .auk-modal__footer {
+    border-radius: 0;
   }
 }
 
