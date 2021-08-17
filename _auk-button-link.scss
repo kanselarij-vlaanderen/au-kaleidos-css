@@ -40,11 +40,23 @@
   }
 }
 
-.auk-button-link.auk-button--muted {
+.auk-button-link--muted {
   color: $au-gray-600;
   &:hover,
   &:active {
     color: $au-gray-800;
+  }
+}
+
+.auk-button-link--light {
+  font-weight: 400;
+}
+
+.auk-button-link--small {
+  font-size: 1.3rem;
+
+  .auk-button__label {
+    font-size: 1.3rem;
   }
 }
 
