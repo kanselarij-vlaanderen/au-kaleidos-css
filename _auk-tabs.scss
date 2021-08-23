@@ -17,7 +17,16 @@
   border-bottom: 0.1rem solid $au-gray-300;
 }
 
-.auk-tabs a {
+.auk-tabs button {
+  font-family: flanders-sans, sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  appearance: none;
+  padding: 0;
+}
+
+.auk-tabs a,
+.auk-tabs button {
   color: $au-blue-600;
   font-weight: 500;
   height: 5rem;
@@ -55,7 +64,9 @@
 }
 
 .auk-tabs a.active,
-.auk-tabs .auk-tabs__tab--active a {
+.auk-tabs .auk-tabs__tab--active a,
+.auk-tabs button.active,
+.auk-tabs .auk-tabs__tab--active button {
   color: $au-gray-900;
   border-bottom: 0.3rem solid $au-gray-900;
   .auk-tabs__tab-counter {
