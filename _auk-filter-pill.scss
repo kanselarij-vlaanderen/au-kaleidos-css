@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .auk-filter-pill {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -60,8 +60,7 @@
 .auk-filter-pill-list {
   display: flex;
   flex-wrap: wrap;
+  gap: .5rem;
   align-items: center;
-  .auk-filter-pill:not(:first-of-type) {
-    margin-left: .5rem;
-  }
+  line-height: normal;
 }
