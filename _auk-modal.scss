@@ -52,7 +52,6 @@ $g-auk-modal-context-z: 40 !default;
   flex-direction: column;
   margin: 0 auto;
   height: 100%;
-  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.2));
 }
 
 /* Parts
@@ -68,6 +67,7 @@ $g-auk-modal-context-z: 40 !default;
   flex: 0 1 auto;
   flex-direction: column;
   max-height: calc(100vh - 4rem);
+  box-shadow: $au-shadow-large;
 }
 
 .auk-modal__header {
