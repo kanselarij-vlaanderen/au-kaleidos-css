@@ -32,6 +32,12 @@
   font-weight: 500;
   border-radius: .3rem;
   cursor: pointer;
+
+  &[disabled],
+  &:disabled,
+  &.auk-button--disabled {
+    pointer-events: none;
+  }
 }
 
 a.auk-button {
@@ -123,7 +129,6 @@ a.auk-button {
   &.auk-button--disabled {
     color: #fff;
     background-color: $au-gray-300;
-    pointer-events: none;
 
     .auk-icon {
       color: #fff;
@@ -136,7 +141,6 @@ a.auk-button {
   &:disabled,
   &.auk-button--disabled {
     color: $au-gray-700;
-    pointer-events: none;
     box-shadow: inset 0 0 0 0.2rem $au-gray-600;
     opacity: .3;
     .auk-icon {
@@ -150,7 +154,6 @@ a.auk-button {
   &:disabled,
   &.auk-button--disabled {
     color: $au-gray-700;
-    pointer-events: none;
     box-shadow: inset 0 0 0 0.1rem $au-gray-300;
     opacity: .3;
     .auk-icon {
@@ -169,7 +172,6 @@ a.auk-button {
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    pointer-events: none;
     color: $au-gray-700;
     opacity: .3;
   }
@@ -184,7 +186,6 @@ a.auk-button {
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    pointer-events: none;
     color: $au-gray-700;
     opacity: .3;
   }
@@ -196,6 +197,16 @@ a.auk-button {
   &:hover,
   &:active {
     background: $au-red-700;
+  }
+  &[disabled],
+  &:disabled,
+  &.auk-button--disabled {
+    color: #fff;
+    background-color: $au-red-100;
+
+    .auk-icon {
+      color: #fff;
+    }
   }
 }
 
@@ -228,6 +239,12 @@ a.auk-button {
   &:active {
     color: $au-red-700;
   }
+  &[disabled],
+  &:disabled,
+  &.auk-button--disabled {
+    color: $au-red-500;
+    opacity: .3;
+  }
 }
 
 .auk-button--success-borderless {
@@ -235,6 +252,10 @@ a.auk-button {
   &:hover,
   &:active {
     color: $au-green-700;
+  }
+  &.auk-button--disabled {
+    color: $au-green-500;
+    opacity: .3;
   }
 }
 
@@ -246,6 +267,16 @@ a.auk-button {
   &:active {
     color: $au-red-500;
     border-color: $au-red-500;
+  }
+  &[disabled],
+  &:disabled,
+  &.auk-button--disabled {
+    color: $au-gray-700;
+    box-shadow: inset 0 0 0 0.1rem $au-gray-300;
+    opacity: .3;
+    .auk-icon {
+      color: $au-gray-600;
+    }
   }
 }
 
