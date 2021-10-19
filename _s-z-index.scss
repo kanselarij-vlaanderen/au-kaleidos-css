@@ -2,5 +2,12 @@
    Z-index
    ========================================================================== */
 
-$z-index-modal: 3400;
-$z-index-modal-backdrop: 3300;
+$z-index-dropdown: 1000;
+$z-index-sticky: 1200;
+$z-index-fixed: 1300;
+$z-index-modal-backdrop: 1400;
+$z-index-offcanvas: 1500;
+$z-index-modal: 1600;
+$z-index-alert-stack: 1700;
+$z-index-popover: 1800;
+$z-index-tooltip: 1900;

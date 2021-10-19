@@ -10,6 +10,7 @@
   bottom: 2.4rem;
   display: flex;
   flex-direction: column-reverse;
+  z-index: $z-index-alert-stack;
 
   .auk-alert {
     min-width: 40rem;

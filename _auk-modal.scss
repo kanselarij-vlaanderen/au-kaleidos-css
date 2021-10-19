@@ -15,9 +15,6 @@ $auk-modal-footer-bg-color: #fff !default;
 $auk-modal-header-border-color: $au-gray-300 !default;
 $auk-modal-footer-border-color: $au-gray-300 !default;
 
-$g-auk-modal-backdrop-z: 30 !default;
-$g-auk-modal-context-z: 40 !default;
-
 /* Component
   ========================================================================== */
 
@@ -33,7 +30,6 @@ $g-auk-modal-context-z: 40 !default;
     transform 0.2s ease-in-out;
   visibility: hidden;
   width: 100%;
-  z-index: $g-auk-modal-context-z;
   align-items: center;
   justify-content: center;
 
@@ -178,7 +174,7 @@ $g-auk-modal-context-z: 40 !default;
   transition: visibility 0s linear 0.2s, opacity 0.2s linear;
   left: 0;
   visibility: hidden;
-  z-index: $g-auk-modal-backdrop-z;
+  z-index: $z-index-modal-backdrop;
 
   &.auk-modal-backdrop--visible {
     opacity: 1;
