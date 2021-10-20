@@ -11,3 +11,5 @@ $z-index-modal: 1600;
 $z-index-alert-stack: 1700;
 $z-index-popover: 1800;
 $z-index-tooltip: 1900;
+
+$z-index-modal-additive: 1000; // This is used to apply the correct stack order for element placed inside, for example, a modal. Lets say you want to place a popover inside a modal: `$z-index-modal-additive + $z-index-popover`
