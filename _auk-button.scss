@@ -2,17 +2,6 @@
   auk-button
    ========================================================================== */
 
-/* Mixins
-   ========================================================================== */
-
-@mixin button-focus {
-  &:focus {
-    outline: 0;
-    border-color: $au-yellow-500;
-    box-shadow: inset 0 0 0 0.1rem $au-yellow-500;
-  }
-}
-
 /* Component
    ========================================================================== */
 
@@ -28,7 +17,7 @@
   background-color: transparent;
   white-space: nowrap;
   text-align: center;
-  @include button-focus;
+  @include element-focus;
   font-weight: 500;
   border-radius: .3rem;
   cursor: pointer;
