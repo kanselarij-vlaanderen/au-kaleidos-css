@@ -38,7 +38,7 @@
   left: 0;
   height: 1.8rem;
   width: 1.8rem;
-  border: .1rem solid $au-gray-300;
+  border: .1rem solid $auk-gray-300;
   background: #FFF;
   border-radius: .3rem;
 }
@@ -55,8 +55,8 @@
 
 /* When the checkbox is checked, add a blue background */
 .auk-checkbox input:checked ~ .auk-checkbox__box {
-  background-color: $au-blue-600;
-  border: .1rem solid $au-blue-600;
+  background-color: $auk-blue-600;
+  border: .1rem solid $auk-blue-600;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -80,17 +80,17 @@
 
 .auk-checkbox input:not(:disabled):focus ~ .auk-checkbox__box,
 .auk-checkbox input:not(:disabled):active ~ .auk-checkbox__box {
-  border-color: $au-yellow-500;
-  box-shadow: inset 0 0 0 0.1rem $au-yellow-500;
+  border-color: $auk-yellow-500;
+  box-shadow: inset 0 0 0 0.1rem $auk-yellow-500;
 }
 
 .auk-checkbox input:disabled ~ .auk-checkbox__box {
-  border: .1rem solid $au-gray-300;
-  background: $au-gray-200;
+  border: .1rem solid $auk-gray-300;
+  background: $auk-gray-200;
 }
 
 .auk-checkbox input:checked:disabled ~ .auk-checkbox__box:after {
-  border-color: $au-gray-500;
+  border-color: $auk-gray-500;
 }
 
 .auk-checkbox-list--inline {

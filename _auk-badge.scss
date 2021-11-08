@@ -57,17 +57,17 @@
    ========================================================================== */
 
 .auk-badge--default {
-  background: $au-gray-200;
+  background: $auk-gray-200;
   color: #666;
 }
 
 .auk-badge--default-dark {
-  background: $au-gray-600;
+  background: $auk-gray-600;
   color: #FFF;
 }
 
 .auk-badge--primary {
-  background: $au-blue-600;
+  background: $auk-blue-600;
   color: #FFF;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .auk-badge--success {
-  background: $au-green-500;
+  background: $auk-green-500;
   color: #FFF;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .auk-badge--warning {
-  background: $au-yellow-500;
+  background: $auk-yellow-500;
   color: #000;
 }
 
@@ -95,7 +95,7 @@
    ========================================================================== */
 
 .auk-badge-and-text--default {
-  background: $au-gray-100;
+  background: $auk-gray-100;
 }
 
 .auk-badge-and-text {
@@ -124,6 +124,6 @@
 
 .auk-badge-and-text--list {
   .auk-badge-and-text + .auk-badge-and-text {
-    border-top: .1rem solid $au-gray-200;
+    border-top: .1rem solid $auk-gray-200;
   }
 }

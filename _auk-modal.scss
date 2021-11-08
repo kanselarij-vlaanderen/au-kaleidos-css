@@ -8,12 +8,12 @@
 $auk-modal-padding-horizontal: 2.4rem !default;
 $auk-modal-padding-vertical: 2.4rem !default;
 $auk-modal-border-radius: 0.4rem !default;
-$auk-modal-shadow-color: $au-gray-600 !default;
+$auk-modal-shadow-color: $auk-gray-600 !default;
 
 $auk-modal-header-bg-color: #fff !default;
 $auk-modal-footer-bg-color: #fff !default;
-$auk-modal-header-border-color: $au-gray-300 !default;
-$auk-modal-footer-border-color: $au-gray-300 !default;
+$auk-modal-header-border-color: $auk-gray-300 !default;
+$auk-modal-footer-border-color: $auk-gray-300 !default;
 
 /* Component
   ========================================================================== */
@@ -63,7 +63,7 @@ $auk-modal-footer-border-color: $au-gray-300 !default;
   flex: 0 1 auto;
   flex-direction: column;
   max-height: calc(100vh - 4rem);
-  box-shadow: $au-shadow-large;
+  box-shadow: $auk-shadow-large;
 }
 
 .auk-modal__header {
@@ -72,7 +72,7 @@ $auk-modal-footer-border-color: $au-gray-300 !default;
 }
 
 .auk-modal__header--bordered {
-  border-bottom: 0.1rem solid $au-gray-300;
+  border-bottom: 0.1rem solid $auk-gray-300;
 }
 
 .auk-modal__body {
@@ -86,7 +86,7 @@ $auk-modal-footer-border-color: $au-gray-300 !default;
 }
 
 .auk-modal__footer--bordered {
-  border-top: 0.1rem solid $au-gray-300;
+  border-top: 0.1rem solid $auk-gray-300;
 }
 
 .auk-modal__header,
@@ -161,7 +161,7 @@ $auk-modal-footer-border-color: $au-gray-300 !default;
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba($au-gray-900, 0.2);
+  background: rgba($auk-gray-900, 0.2);
   transition: visibility 0s linear 0.2s, opacity 0.2s linear;
   visibility: hidden;
   z-index: $z-index-modal-backdrop;
@@ -174,7 +174,7 @@ $auk-modal-footer-border-color: $au-gray-300 !default;
 }
 
 .auk-modal-context + .auk-modal-context {
-  background: rgba($au-gray-900, 0.2);
+  background: rgba($auk-gray-900, 0.2);
 }
 
 /* Types

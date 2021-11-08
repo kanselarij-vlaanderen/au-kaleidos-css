@@ -10,7 +10,7 @@
 }
 
 .auk-panel--gray-100 {
-  background: $au-gray-100;
+  background: $auk-gray-100;
 }
 
 .auk-panel__header {
@@ -56,7 +56,7 @@
   .auk-document-card {
     border: none;
     &:not(:last-of-type) {
-      border-bottom: .1rem solid $au-gray-300;
+      border-bottom: .1rem solid $auk-gray-300;
     }
   }
 }
