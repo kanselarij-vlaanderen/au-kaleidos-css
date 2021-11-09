@@ -22,7 +22,7 @@
   height: 4.9rem;
   padding-left: .75rem;
   overflow: hidden;
-  background-color: $au-brand;
+  background-color: $auk-brand;
 
   svg {
     height: 100%;
@@ -48,7 +48,7 @@
     transform: rotate(-19deg);
     width: .1rem;
     height: calc(100% + .4rem);
-    background-color: $au-gray-300;
+    background-color: $auk-gray-300;
     display: block;
     position: absolute;
   }*/
@@ -59,7 +59,7 @@
   line-height: 1;
   position: relative;
   font-weight: 500;
-  color: $au-gray-1000;
+  color: $auk-gray-1000;
   margin-left: .6rem;
   transition: color 125ms cubic-bezier(.19,1,.22,1);
 }

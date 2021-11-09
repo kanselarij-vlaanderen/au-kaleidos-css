@@ -3,23 +3,23 @@
    ========================================================================== */
 
 .auk-input {
-  border: 0.1rem solid $au-gray-300;
+  border: 0.1rem solid $auk-gray-300;
   padding: .7rem;
   font-family: flanders-sans, sans-serif;
   font-size: 1.5rem;
-  color: $au-gray-800;
+  color: $auk-gray-800;
   background: #fff;
   border-radius: .3rem;
 }
 
 .auk-input::placeholder {
-  color: $au-gray-500;
+  color: $auk-gray-500;
 }
 
 .auk-input:focus {
   outline: 0;
-  border-color: $au-yellow-500;
-  box-shadow: inset 0 0 0 0.1rem $au-yellow-500;
+  border-color: $auk-yellow-500;
+  box-shadow: inset 0 0 0 0.1rem $auk-yellow-500;
 }
 
 .auk-input--block {
@@ -28,7 +28,7 @@
 }
 
 .auk-input--error {
-  border: .1rem solid $au-red-500;
+  border: .1rem solid $auk-red-500;
 }
 
 .auk-input-with-icon {

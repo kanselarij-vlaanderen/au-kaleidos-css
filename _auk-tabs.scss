@@ -9,7 +9,7 @@
 }
 
 .auk-tabs--border-bottom {
-  border-bottom: 0.1rem solid $au-gray-300;
+  border-bottom: 0.1rem solid $auk-gray-300;
 }
 
 .auk-tabs {
@@ -22,7 +22,7 @@
   }
 
   a, button {
-    color: $au-blue-600;
+    color: $auk-blue-600;
     font-weight: 500;
     height: 5rem;
     display: flex;
@@ -32,7 +32,7 @@
     white-space: nowrap;
 
     &:hover {
-      background: $au-gray-100;
+      background: $auk-gray-100;
     }
 
     @include element-focus;
@@ -54,16 +54,16 @@
 
 .auk-tabs__tab-counter {
   font-weight: 400;
-  color: $au-blue-600;
+  color: $auk-blue-600;
 }
 
 .auk-tabs__tab--active {
   a, button {
-    color: $au-gray-900;
-    border-bottom: 0.3rem solid $au-gray-900;
+    color: $auk-gray-900;
+    border-bottom: 0.3rem solid $auk-gray-900;
 
     .auk-tabs__tab-counter {
-      color: $au-gray-600;
+      color: $auk-gray-600;
     }
   }
 }
@@ -72,7 +72,7 @@
   ========================================================================== */
 
 .auk-tabs--reversed {
-  border-top: 0.1rem solid $au-gray-300;
+  border-top: 0.1rem solid $auk-gray-300;
   margin-top: 1.2rem;
 }
 
@@ -89,8 +89,8 @@
 
 .auk-tabs--reversed .auk-tabs__tab--active {
   a, button {
-    color: $au-gray-900;
-    border-top: 0.3rem solid $au-gray-900;
+    color: $auk-gray-900;
+    border-top: 0.3rem solid $auk-gray-900;
     border-bottom: none;
   }
 }
@@ -100,7 +100,7 @@
 
 .auk-tabs__hierarchical-back.auk-tabs__tab--active {
   a, button {
-    color: $au-blue-600;
+    color: $auk-blue-600;
     border-bottom: 0.3rem solid transparent;
   }
 }

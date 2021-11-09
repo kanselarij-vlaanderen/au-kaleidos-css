@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .auk-status-pill {
-  border: 0.1rem solid $au-gray-300;
+  border: 0.1rem solid $auk-gray-300;
   border-radius: 0.5rem;
   padding: 0.35rem 0.6rem;
   white-space: nowrap;
@@ -16,37 +16,37 @@
 }
 
 .auk-status-pill--in-progress {
-  background-color: $au-yellow-100;
-  border: 0.1rem solid $au-yellow-100;
-  color: $au-yellow-700;
+  background-color: $auk-yellow-100;
+  border: 0.1rem solid $auk-yellow-100;
+  color: $auk-yellow-700;
   .auk-icon {
-    color: $au-yellow-700;
+    color: $auk-yellow-700;
   }
 }
 
 .auk-status-pill--done {
-  background-color: $au-green-100;
-  border: 0.1rem solid $au-green-100;
-  color: $au-green-700;
+  background-color: $auk-green-100;
+  border: 0.1rem solid $auk-green-100;
+  color: $auk-green-700;
   .auk-icon {
-    color: $au-green-700;
+    color: $auk-green-700;
   }
 }
 
 .auk-status-pill--not-started {
-  background-color: $au-blue-100;
-  border: 0.1rem solid $au-blue-100;
-  color: $au-blue-700;
+  background-color: $auk-blue-100;
+  border: 0.1rem solid $auk-blue-100;
+  color: $auk-blue-700;
   .auk-icon {
-    color: $au-blue-700;
+    color: $auk-blue-700;
   }
 }
 
 .auk-status-pill--error {
-  background-color: $au-red-100;
-  border: 0.1rem solid $au-red-100;
-  color: $au-red-700;
+  background-color: $auk-red-100;
+  border: 0.1rem solid $auk-red-100;
+  color: $auk-red-700;
   .auk-icon {
-    color: $au-red-700;
+    color: $auk-red-700;
   }
 }
