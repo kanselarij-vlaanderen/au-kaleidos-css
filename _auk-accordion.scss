@@ -20,22 +20,22 @@
       cursor: pointer;
 
       &:hover {
-        background-color: $auk-gray-100;
+        background-color: $au-gray-100;
       }
 
       &:focus {
-        border: .15rem solid $auk-yellow-500;
-        background-color: $auk-gray-100;
+        border: .15rem solid $au-yellow-500;
+        background-color: $au-gray-100;
         .auk-icon--chevron-right {
-          color: $auk-gray-800;
+          color: $au-gray-800;
         }
       }
 
       &:active {
-        background-color: $auk-gray-200;
+        background-color: $au-gray-200;
 
         .auk-icon--chevron-right {
-          color: $auk-gray-800;
+          color: $au-gray-800;
         }
       }
     }

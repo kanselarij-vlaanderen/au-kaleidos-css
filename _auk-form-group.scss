@@ -45,11 +45,11 @@
 .auk-form-group--error {
 
   label {
-    color: $auk-red-700;
+    color: $au-red-700;
   }
 
   input, textarea {
-    border-color: $auk-red-700;
+    border-color: $au-red-700;
   }
 
 }
@@ -71,7 +71,7 @@
 .auk-form-group--required {
  label:after {
     content:"*";
-    color: $auk-gray-400;
+    color: $au-gray-400;
     margin-left: .25rem;
   }
 }

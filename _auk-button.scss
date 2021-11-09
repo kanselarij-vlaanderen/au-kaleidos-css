@@ -72,43 +72,43 @@ a.auk-button {
    ========================================================================== */
 
 .auk-button--primary {
-  background: $auk-blue-600;
+  background: $au-blue-600;
   color: #fff;
   &:hover {
-    background: $auk-blue-700;
+    background: $au-blue-700;
   }
   &:active {
-    background: $auk-blue-800;
+    background: $au-blue-800;
   }
 }
 
 .auk-button--secondary {
-  box-shadow: inset 0 0 0 0.2rem $auk-blue-600;
-  color: $auk-blue-600;
+  box-shadow: inset 0 0 0 0.2rem $au-blue-600;
+  color: $au-blue-600;
   background: none;
   transition: box-shadow 0.2s;
   &:hover {
-    color: $auk-blue-700;
-    box-shadow: inset 0 0 0 0.2rem $auk-blue-700;
+    color: $au-blue-700;
+    box-shadow: inset 0 0 0 0.2rem $au-blue-700;
   }
   &:active {
-    color: $auk-blue-800;
-    background-color: $auk-blue-100;
-    box-shadow: inset 0 0 0 0.2rem $auk-blue-800;
+    color: $au-blue-800;
+    background-color: $au-blue-100;
+    box-shadow: inset 0 0 0 0.2rem $au-blue-800;
   }
 }
 
 .auk-button--tertiary {
-  box-shadow: inset 0 0 0 0.1rem $auk-gray-300;
-  color: $auk-blue-600;
+  box-shadow: inset 0 0 0 0.1rem $au-gray-300;
+  color: $au-blue-600;
   background: none;
   &:hover {
-    color: $auk-blue-600;
-    box-shadow: inset 0 0 0 0.1rem $auk-blue-600;
+    color: $au-blue-600;
+    box-shadow: inset 0 0 0 0.1rem $au-blue-600;
   }
   &:active {
-    color: $auk-blue-800;
-    box-shadow: inset 0 0 0 0.1rem $auk-blue-800;
+    color: $au-blue-800;
+    box-shadow: inset 0 0 0 0.1rem $au-blue-800;
   }
 }
 
@@ -117,7 +117,7 @@ a.auk-button {
   &:disabled,
   &.auk-button--disabled {
     color: #fff;
-    background-color: $auk-gray-300;
+    background-color: $au-gray-300;
 
     .auk-icon {
       color: #fff;
@@ -129,11 +129,11 @@ a.auk-button {
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-gray-700;
-    box-shadow: inset 0 0 0 0.2rem $auk-gray-600;
+    color: $au-gray-700;
+    box-shadow: inset 0 0 0 0.2rem $au-gray-600;
     opacity: .3;
     .auk-icon {
-      color: $auk-gray-600;
+      color: $au-gray-600;
     }
   }
 }
@@ -142,56 +142,56 @@ a.auk-button {
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-gray-700;
-    box-shadow: inset 0 0 0 0.1rem $auk-gray-300;
+    color: $au-gray-700;
+    box-shadow: inset 0 0 0 0.1rem $au-gray-300;
     opacity: .3;
     .auk-icon {
-      color: $auk-gray-600;
+      color: $au-gray-600;
     }
   }
 }
 
 .auk-button--borderless {
-  color: $auk-blue-600;
+  color: $au-blue-600;
   background: none;
   &:hover,
   &:active {
-    color: $auk-blue-700;
+    color: $au-blue-700;
   }
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-gray-700;
+    color: $au-gray-700;
     opacity: .3;
   }
 }
 
 .auk-button--muted-borderless {
-  color: $auk-gray-600;
+  color: $au-gray-600;
   &:hover,
   &:active {
-    color: $auk-gray-800;
+    color: $au-gray-800;
   }
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-gray-700;
+    color: $au-gray-700;
     opacity: .3;
   }
 }
 
 .auk-button--danger-primary {
   color: #fff;
-  background: $auk-red-500;
+  background: $au-red-500;
   &:hover,
   &:active {
-    background: $auk-red-700;
+    background: $au-red-700;
   }
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
     color: #fff;
-    background-color: $auk-red-100;
+    background-color: $au-red-100;
 
     .auk-icon {
       color: #fff;
@@ -200,66 +200,66 @@ a.auk-button {
 }
 
 .auk-button--danger-secondary {
-  box-shadow: inset 0 0 0 0.2rem $auk-red-500;
-  color: $auk-red-500;
+  box-shadow: inset 0 0 0 0.2rem $au-red-500;
+  color: $au-red-500;
   background: none;
   transition: box-shadow 0.2s;
   &:hover,
   &:active {
-    color: $auk-red-700;
-    box-shadow: inset 0 0 0 0.2rem $auk-red-700;
+    color: $au-red-700;
+    box-shadow: inset 0 0 0 0.2rem $au-red-700;
   }
 }
 
 .auk-button--danger-borderless {
-  color: $auk-red-500;
+  color: $au-red-500;
   &:hover,
   &:active {
-    color: $auk-red-700;
+    color: $au-red-700;
   }
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-red-500;
+    color: $au-red-500;
     opacity: .3;
   }
 }
 
 .auk-button--success-borderless {
-  color: $auk-green-500;
+  color: $au-green-500;
   &:hover,
   &:active {
-    color: $auk-green-700;
+    color: $au-green-700;
   }
   &.auk-button--disabled {
-    color: $auk-green-500;
+    color: $au-green-500;
     opacity: .3;
   }
 }
 
 .auk-button--danger-hover {
-  box-shadow: inset 0 0 0 0.1rem $auk-gray-600;
-  color: $auk-gray-700;
+  box-shadow: inset 0 0 0 0.1rem $au-gray-600;
+  color: $au-gray-700;
   background: none;
   &:hover,
   &:active {
-    color: $auk-red-500;
-    border-color: $auk-red-500;
+    color: $au-red-500;
+    border-color: $au-red-500;
   }
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: $auk-gray-700;
-    box-shadow: inset 0 0 0 0.1rem $auk-gray-300;
+    color: $au-gray-700;
+    box-shadow: inset 0 0 0 0.1rem $au-gray-300;
     opacity: .3;
     .auk-icon {
-      color: $auk-gray-600;
+      color: $au-gray-600;
     }
   }
 }
 
 .auk-button--disabled {
-  color: $auk-gray-500;
+  color: $au-gray-500;
   background-color: none;
 
   &:hover {

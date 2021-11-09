@@ -10,9 +10,9 @@
   padding: 0 .5rem 0 .6rem;
   border-radius: .5rem;
   height: 2.4rem;
-  color: $auk-gray-600;
-  background: $auk-gray-100;
-  border: .1rem solid $auk-gray-300;
+  color: $au-gray-600;
+  background: $au-gray-100;
+  border: .1rem solid $au-gray-300;
 }
 
 .auk-filter-pill .auk-icon--close {
@@ -31,7 +31,7 @@
     top: -0.2rem;
     height: 2.2rem;
     width: 0.1rem;
-    background-color: $auk-gray-300;
+    background-color: $au-gray-300;
   }
 }
 
@@ -43,7 +43,7 @@
 .auk-filter-pill__multiple-labels {
   font-weight: 400;
   font-size: 1.2rem;
-  background-color: $auk-gray-600;
+  background-color: $au-gray-600;
   color: #fff;
   width: 1.6rem;
   height: 1.6rem;

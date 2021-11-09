@@ -5,7 +5,7 @@
    ========================================================================== */
 
 .auk-form-help-text {
-  color: $auk-gray-600;
+  color: $au-gray-600;
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -19,23 +19,23 @@
 }
 
 .auk-form-help-text--danger {
-  color: $auk-red-700;
+  color: $au-red-700;
   .auk-icon {
-    color: $auk-red-500;
+    color: $au-red-500;
   }
 }
 
 .auk-form-help-text--success {
-  color: $auk-green-700;
+  color: $au-green-700;
   .auk-icon {
-    color: $auk-green-500;
+    color: $au-green-500;
   }
 }
 
 .auk-form-help-text--warning {
-  color: $auk-yellow-700;
+  color: $au-yellow-700;
   .auk-icon {
-    color: $auk-yellow-500;
+    color: $au-yellow-500;
   }
 }
 

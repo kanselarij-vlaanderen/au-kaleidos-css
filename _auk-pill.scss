@@ -36,31 +36,31 @@
 }
 
 .auk-pill--default {
-  color: $auk-gray-600;
-  background: $auk-gray-100;
-  border: .1rem solid $auk-gray-300;
+  color: $au-gray-600;
+  background: $au-gray-100;
+  border: .1rem solid $au-gray-300;
 }
 
 .auk-pill--white {
-  color: $auk-gray-600;
+  color: $au-gray-600;
   background: #FFF;
-  border: .1rem solid $auk-gray-300;
+  border: .1rem solid $au-gray-300;
 }
 
 .auk-pill--success {
   color: #FFF;
-  background: $auk-green-700;
+  background: $au-green-700;
 }
 
 .auk-pill--danger {
   color: #FFF;
-  background: $auk-red-500;
+  background: $au-red-500;
 }
 
 .auk-pill--warning {
   color: $color-text;
-  background: $auk-yellow-500;
+  background: $au-yellow-500;
   .auk-icon {
-    color: $auk-yellow-700;
+    color: $au-yellow-700;
   }
 }

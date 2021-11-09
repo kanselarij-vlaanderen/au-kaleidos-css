@@ -23,7 +23,7 @@
 }
 
 .auk-file-upload__content {
-  border: 0.1rem dashed $auk-gray-300;
+  border: 0.1rem dashed $au-gray-300;
   border-radius: .3rem;
   width: 100%;
   padding: 3rem;
@@ -39,21 +39,21 @@
 
 .auk-file-upload--gray-100 {
   .auk-file-upload__content {
-    background: $auk-gray-100;
+    background: $au-gray-100;
   }
 }
 
 .auk-file-upload--success {
   .auk-file-upload__content {
-    background: $auk-green-100;
-    border-color: $auk-green-300;
+    background: $au-green-100;
+    border-color: $au-green-300;
   }
 }
 
 .auk-file-upload--error {
   .auk-file-upload__content {
-    background: $auk-red-50;
-    border-color: $auk-red-300;
+    background: $au-red-50;
+    border-color: $au-red-300;
   }
 }
 
@@ -73,11 +73,11 @@
 .auk-file-upload input[type="file"]:focus:not([disabled]) ~ .auk-file-upload__content {
   outline: 0;
   border-color: transparent;
-  box-shadow: inset 0 0 0 0.2rem $auk-yellow-500;
+  box-shadow: inset 0 0 0 0.2rem $au-yellow-500;
 }
 
 .auk-file-upload input[type="file"]:hover:not([disabled]) ~ .auk-file-upload__content {
-  background-color: $auk-gray-100;
+  background-color: $au-gray-100;
 }
 
 .auk-file-upload__action-button {
@@ -86,15 +86,15 @@
 
 .auk-file-upload input[type="file"]:hover:not([disabled]) ~ .auk-file-upload__content {
   .auk-file-upload__action-button {
-    color: $auk-blue-600;
-    box-shadow: inset 0 0 0 0.1rem $auk-blue-600;
+    color: $au-blue-600;
+    box-shadow: inset 0 0 0 0.1rem $au-blue-600;
   }
 }
 
 .auk-file-upload input[type="file"]:active:not([disabled]) ~ .auk-file-upload__content {
   .auk-file-upload__action-button {
-    color: $auk-blue-800;
-    box-shadow: inset 0 0 0 0.1rem $auk-blue-800;
+    color: $au-blue-800;
+    box-shadow: inset 0 0 0 0.1rem $au-blue-800;
   }
 }
 

@@ -6,7 +6,7 @@
   font-size: 1.6rem;
   margin: 0 0 1.5rem;
   line-height: 1.6;
-  color: $auk-gray-700;
+  color: $au-gray-700;
 }
 
 .auk-content strong {
@@ -17,7 +17,7 @@
 .auk-content h2, .auk-h2,
 .auk-content h3, .auk-h3,
 .auk-content h4, .auk-h4 {
-  color: $auk-gray-900;
+  color: $au-gray-900;
 }
 
 .auk-content h1, .auk-h1 {
@@ -60,7 +60,7 @@
 
 .auk-content {
   pre {
-    background: $auk-gray-100;
+    background: $au-gray-100;
     padding: 1.5rem;
     margin: 0 0 1rem;
     font-size: 75%;
@@ -76,10 +76,10 @@
   p > code,
   li > code {
     font-size: 85%;
-    background: $auk-gray-100;
+    background: $au-gray-100;
     padding: 0.2rem;
     border-radius: 0.2rem;
-    color: $auk-red-500;
+    color: $au-red-500;
   }
 
   table {
@@ -92,14 +92,14 @@
     padding: 0.8rem;
     vertical-align: middle;
     padding: 1.2rem 1rem;
-    border-bottom: .1rem solid $auk-gray-300;
+    border-bottom: .1rem solid $au-gray-300;
   }
 
   table th {
     border-bottom-width: .2rem;
     text-align: left;
     font-weight: 500;
-    color: $auk-gray-600;
+    color: $au-gray-600;
   }
 
   table tr:last-child td {
@@ -107,6 +107,6 @@
   }
 
   table td {
-    border-bottom: .1rem solid $auk-gray-300;
+    border-bottom: .1rem solid $au-gray-300;
   }
 }
