@@ -12,51 +12,60 @@
     align-items: center;
     border-radius: .3rem;
     height: 4rem;
+  }
 
-    button {
-      all: inherit;
-      width: 100%;
-      border: .15rem solid transparent;
-      cursor: pointer;
+  .auk-accordion__button {
+    all: inherit;
+    width: 100%;
+    border: .15rem solid transparent;
+    cursor: pointer;
 
-      &:hover {
-        background-color: $auk-gray-100;
-      }
+    color: $auk-blue-600;
 
-      &:focus {
-        border: .15rem solid $auk-yellow-500;
-        background-color: $auk-gray-100;
-        .auk-icon--chevron-right {
-          color: $auk-gray-800;
-        }
-      }
+    &:hover {
+      background-color: $auk-gray-100;
+    }
 
-      &:active {
-        background-color: $auk-gray-200;
+    &:focus {
+      border: .15rem solid $auk-yellow-500;
+      background-color: $auk-gray-100;
+    }
 
-        .auk-icon--chevron-right {
-          color: $auk-gray-800;
-        }
+    &:active {
+      background-color: $auk-gray-200;
+    }
+
+    &[disabled],
+    &:disabled {
+      pointer-events: none;
+
+      color: $auk-gray-700;
+      opacity: .3;
+
+      .auk-icon {
+        color: $auk-gray-600;
       }
     }
   }
 
-  .auk-accordion__header--controls-left button {
-    padding: 0 1.5rem;
+  .auk-accordion__header--controls-left {
+    .auk-accordion__button {
+      padding: 0 1.5rem;
+    }
   }
 
-  .auk-accordion__header--controls-right button {
-    padding: 0 1.5rem 0 0;
+  .auk-accordion__header--controls-right {
+    .auk-accordion__button {
+      padding: 0 1.5rem 0 0;
+    }
   }
 
   .auk-accordion__title {
-    font-weight: 500;
     padding: 0 1.5rem;
-    font-size: 1.8rem;
-  }
 
-  .auk-toolbar-complex__left .auk-button {
-    margin-right: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
   }
 
   .auk-accordion__content {
@@ -64,8 +73,7 @@
     margin-top: 2rem;
   }
 
-  .auk-toolbar-complex__left .auk-icon:first-child,
-  .auk-toolbar-complex__right .auk-icon:first-child {
+  .auk-accordion__toggle-icon {
     transform: rotate(90deg);
     transition: .150s ease-in-out;
   }
@@ -75,8 +83,7 @@
       display: none;
     }
 
-    .auk-toolbar-complex__left .auk-icon:first-child,
-    .auk-toolbar-complex__right .auk-icon:first-child {
+    .auk-accordion__toggle-icon {
       transform: rotate(0deg);
     }
   }
