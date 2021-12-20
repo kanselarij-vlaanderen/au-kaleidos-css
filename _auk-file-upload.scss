@@ -86,8 +86,8 @@
 
 .auk-file-upload input[type="file"]:hover:not([disabled]) ~ .auk-file-upload__content {
   .auk-file-upload__action-button {
-    color: $auk-blue-600;
-    box-shadow: inset 0 0 0 0.1rem $auk-blue-600;
+    color: $auk-blue-500;
+    box-shadow: inset 0 0 0 0.1rem $auk-blue-500;
   }
 }
 

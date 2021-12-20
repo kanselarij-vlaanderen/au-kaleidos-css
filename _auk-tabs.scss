@@ -22,7 +22,7 @@
   }
 
   a, button {
-    color: $auk-blue-600;
+    color: $auk-blue-500;
     font-weight: 500;
     height: 5rem;
     display: flex;
@@ -54,7 +54,7 @@
 
 .auk-tabs__tab-counter {
   font-weight: 400;
-  color: $auk-blue-600;
+  color: $auk-blue-500;
 }
 
 .auk-tabs__tab--active {
@@ -100,7 +100,7 @@
 
 .auk-tabs__hierarchical-back.auk-tabs__tab--active {
   a, button {
-    color: $auk-blue-600;
+    color: $auk-blue-500;
     border-bottom: 0.3rem solid transparent;
   }
 }

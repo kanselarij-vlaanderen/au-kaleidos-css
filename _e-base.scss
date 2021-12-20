@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: $color-text;
+  color: $auk-color-text;
   line-height: 1.6;
   font-family: flanders-sans, sans-serif;
   font-size: 1.5rem;
@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  color: $auk-blue-600;
+  color: $auk-blue-500;
 }
 
 strong {
@@ -40,4 +40,8 @@ hr {
 
 abbr[title] {
   text-decoration: none;
+}
+
+::selection {
+  background: rgba($auk-yellow-500, .3);
 }

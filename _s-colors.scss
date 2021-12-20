@@ -30,7 +30,7 @@ $auk-gray-900    : #212326;
 $auk-gray-1000   : #000000;
 
 $auk-blue-100    : #D4E3F7;
-$auk-blue-600    : #0055CC;
+$auk-blue-500    : #0055CC;
 $auk-blue-700    : #004099;
 $auk-blue-800    : #002A64;
 
@@ -54,12 +54,15 @@ $auk-green-500   : #8BAE00;
 $auk-green-700   : #238000;
 $auk-green-800   : #165100;
 
+// Additional colors (not for regular use)
+$auk-pink: #E86AB9;
+
 
 /* Semantic colors
  ========================================================================== */
  
-$color-primary: $auk-blue-600;
-$color-header: $auk-gray-900;
-$color-text: $auk-gray-800;
-$color-muted: $auk-gray-600;
-$color-border: $auk-gray-300;
+$auk-color-primary: $auk-blue-500;
+$auk-color-header: $auk-gray-900;
+$auk-color-text: $auk-gray-800;
+$auk-color-muted: $auk-gray-600;
+$auk-color-border: $auk-gray-300;

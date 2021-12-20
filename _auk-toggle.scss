@@ -23,7 +23,7 @@
 
     &:checked ~ .auk-toggle__knob {
       transform: translateX(1.5rem);
-      border-color: $auk-blue-600;
+      border-color: $auk-blue-500;
 
       &:after {
         left: auto;
@@ -32,8 +32,8 @@
     }
 
     &:checked ~ .auk-toggle__back {
-      background-color: $auk-blue-600;
-      border-color: $auk-blue-600;
+      background-color: $auk-blue-500;
+      border-color: $auk-blue-500;
     }
 
     &:disabled {

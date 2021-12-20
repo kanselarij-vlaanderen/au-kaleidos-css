@@ -55,8 +55,8 @@
 
 /* When the checkbox is checked, add a blue background */
 .auk-checkbox input:checked ~ .auk-checkbox__box {
-  background-color: $auk-blue-600;
-  border: .1rem solid $auk-blue-600;
+  background-color: $auk-blue-500;
+  border: .1rem solid $auk-blue-500;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

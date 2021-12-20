@@ -44,8 +44,8 @@
 }
 
 .auk-radio input[type='radio']:checked ~ .auk-radio__box {
-  background: $auk-blue-600;
-  border-color: $auk-blue-600;
+  background: $auk-blue-500;
+  border-color: $auk-blue-500;
   opacity: 1;
   &:before {
     opacity: 1;

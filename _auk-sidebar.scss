@@ -64,7 +64,7 @@
   display: block;
   text-decoration: none;
   padding: 1rem 2rem;
-  color: $color-text;
+  color: $auk-color-text;
 
   &:hover {
     background-color: $auk-gray-200;
@@ -77,7 +77,7 @@
 
 .auk-sidebar__sublabel {
   font-size: 1.3rem;
-  color: $color-muted;
+  color: $auk-color-muted;
 }
 
 .auk-sidebar__item--active a {
@@ -97,7 +97,7 @@
       bottom: 0;
       left: 0;
       width: 0.4rem;
-      background-color: $color-primary;
+      background-color: $auk-color-primary;
       height: 100%;
     }
   }

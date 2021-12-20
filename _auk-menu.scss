@@ -24,7 +24,7 @@ $g-auk-menu-z: 60 !default;
 
   // reset styling (if enclosed within a button for example)
   font-weight: 400;
-  color: $color-text;
+  color: $auk-color-text;
   white-space: normal;
   text-align: start;
 }
@@ -39,14 +39,14 @@ $g-auk-menu-z: 60 !default;
 }
 
 .auk-menu__item {
-  color: $auk-blue-600;
+  color: $auk-blue-500;
   text-decoration: none;
   display: flex;
   padding: 0.8rem 1.6rem;
 
   &:hover {
     background-color: $auk-gray-100;
-    color: $auk-blue-600;
+    color: $auk-blue-500;
   }
 
   &:focus {

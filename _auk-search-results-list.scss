@@ -48,14 +48,14 @@ $g-auk-search-results-list-z: 70 !default;
 }
 
 .auk-search-results-list__item {
-  color: $auk-blue-600;
+  color: $auk-blue-500;
   text-decoration: none;
   display: flex;
   padding: 0.8rem 1.6rem;
 
   &:hover {
     background-color: $auk-gray-100;
-    color: $auk-blue-600;
+    color: $auk-blue-500;
   }
 
   &:focus {
@@ -71,7 +71,7 @@ $g-auk-search-results-list-z: 70 !default;
 
 .auk-search-results-list__subline {
   font-size: 1.3rem;
-  color: rgba($auk-blue-600, .6);
+  color: rgba($auk-blue-500, .6);
 }
 
 .auk-search-results-list.auk-search-results-list--visible.js-no-action {
