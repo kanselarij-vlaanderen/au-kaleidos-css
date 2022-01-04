@@ -30,13 +30,18 @@
   }
 }
 
-.auk-button-link[disabled] {
-  color: $auk-gray-400;
-  text-decoration: none;
-  &:hover,
-  &:active,
-  &:focus {
+.auk-button-link {
+  &[disabled],
+  &:disabled,
+  &.auk-button--disabled {
+    color: $auk-gray-400;
     text-decoration: none;
+    pointer-events: none;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
