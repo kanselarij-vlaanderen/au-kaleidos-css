@@ -58,8 +58,6 @@
 }
 
 .auk-button-link--small {
-  font-size: 1.3rem;
-
   .auk-button__label {
     font-size: 1.3rem;
   }
@@ -94,4 +92,9 @@
   height: 1.8rem;
   position: relative;
   line-height: 0;
+}
+
+.auk-button-link--small .auk-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
