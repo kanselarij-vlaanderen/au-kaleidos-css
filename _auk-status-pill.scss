@@ -18,6 +18,8 @@
   font-size: 1.5rem;
   font-weight: 400;
 
+  pointer-events: none;
+
   > * {
     display: inline-flex;
     align-items: center;
@@ -127,10 +129,12 @@
 
 .auk-status-pill--actionable {
   appearance: none;
-  cursor: pointer;
 
   font-family: $g-base-font-family;
   line-height: 1.6;
+
+  cursor: pointer;
+  pointer-events: auto;
 
   &:focus {
     outline: 0;
