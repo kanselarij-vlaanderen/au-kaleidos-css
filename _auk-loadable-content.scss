@@ -1,0 +1,19 @@
+/* ==========================================================================
+   auk-loadable-content
+   ========================================================================== */
+
+.auk-loadable-content {
+  display: grid;
+  height: 100%;
+
+  &--is-loading {
+    .auk-loadable-content__content {
+      visibility: hidden;
+    }
+  }
+}
+
+.auk-loadable-content__content,
+.auk-loadable-content > .auk-loader-wrapper {
+  grid-area: 1/1/1/1;
+}

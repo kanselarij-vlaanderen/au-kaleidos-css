@@ -1,0 +1,60 @@
+/* ==========================================================================
+   ember-tag-input
+   ========================================================================== */
+
+.emberTagInput {
+  @extend .auk-input;
+  @extend .auk-filter-pill-list;
+
+  width: 100%;
+}
+
+.emberTagInput-tag {
+  @extend .auk-filter-pill;
+}
+
+.emberTagInput-tag--remove {
+  opacity: 0.75;
+}
+
+.emberTagInput-remove {
+  @extend .auk-icon;
+  @extend .auk-icon--x;
+
+  text-decoration: none !important;
+  color: inherit !important;
+
+  // substitute <i class="ki-x" />
+  &:before {
+    // copied from:
+    // @kanselarij-vlaanderen/au-kaleidos-icons/iconfont/icons
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // ki-x icon
+    content: "\f152";
+  }
+}
+
+.emberTagInput-new {
+  display: inline-flex;
+}
+
+.emberTagInput-input {
+  border: none;
+  padding: 0;
+
+  font-family: $g-base-font-family;
+  font-size: 1.5rem;
+  color: $auk-gray-800;
+
+  &:focus {
+    outline: none;
+  }
+}
