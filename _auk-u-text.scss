@@ -2,8 +2,16 @@
   Text utilities
    ========================================================================== */
 
-.auk-u-muted {
+.auk-u-text-muted {
   color: $auk-gray-600 !important;
+}
+
+.auk-u-text-success {
+  color: $auk-green-700 !important;
+}
+
+.auk-u-text-error {
+  color: $auk-red-700 !important;
 }
 
 .auk-u-italic {
@@ -15,10 +23,6 @@
 }
 
 .auk-u-text-size--small {
-  font-size: 1.3rem !important;
-}
-
-.auk-u-text-small {
   font-size: 1.3rem !important;
 }
 
@@ -64,4 +68,26 @@
 
 .auk-u-text-letter-spacing--small {
   letter-spacing: 0.05em !important;
+}
+
+.auk-u-text-dotted {
+  border-bottom: .1rem dotted $auk-gray-400 !important;
+}
+
+.auk-u-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.auk-u-text-capitalize {
+  &::first-letter {
+    text-transform: uppercase !important;
+  }
+}
+
+.auk-u-text-condensed-line-height {
+  line-height: 1 !important;
+}
+
+.auk-u-text-family-serif {
+  font-family: flanders-serif, serif !important;
 }

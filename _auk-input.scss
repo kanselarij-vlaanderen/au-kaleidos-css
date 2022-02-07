@@ -36,17 +36,37 @@
   position: relative;
   width: 100%;
 
-  .auk-input {
+  > .auk-input {
     padding-left: 3rem;
   }
 
-  .auk-icon {
-    left: 0.8rem;
-    opacity: 0.75;
+  > .auk-icon {
     position: absolute;
-    top: 0.9rem;
+    top: 0.8rem;
+    left: 0.8rem;
+
     width: 1.8rem;
     height: 1.8rem;
+    opacity: 0.75;
+
+    pointer-events: none;
+  }
+}
+
+.auk-input-with-clear-action {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  > .auk-input {
+    padding-right: 3rem;
+  }
+
+  > .auk-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 

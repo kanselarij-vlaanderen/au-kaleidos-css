@@ -20,6 +20,15 @@ body {
   -webkit-text-size-adjust: none; 
 }
 
+p {
+  word-break: break-word;
+  white-space: normal;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
 a {
   color: $auk-blue-500;
 }

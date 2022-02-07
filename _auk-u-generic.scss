@@ -55,14 +55,30 @@
   background-color: $auk-gray-100 !important;
 }
 
-.auk-u-text-dotted {
-  border-bottom: .1rem dotted $auk-gray-400 !important;
-}
-
 .auk-u-opacity--1\/2 {
   opacity: 0.5 !important;
 }
 
 .auk-u-opacity--1\/3 {
   opacity: 0.33 !important;
+}
+
+.auk-u-border-top {
+  border-top: .1rem solid $auk-gray-300 !important;
+}
+
+.auk-u-border-right {
+  border-right: .1rem solid $auk-gray-300 !important;
+}
+
+.auk-u-border-bottom {
+  border-bottom: .1rem solid $auk-gray-300 !important;
+}
+
+.auk-u-border-left {
+  border-left: .1rem solid $auk-gray-300 !important;
+}
+
+.auk-u-position-relative {
+  position: relative !important;
 }

@@ -2,6 +2,8 @@
    ember-tag-input
    ========================================================================== */
 
+@use "sass:math";
+
 .ember-power-select-trigger {
   position: relative;
   display: block;
@@ -71,7 +73,7 @@
 .ember-power-select-clear-btn {
   $icon-font-size: 2.6rem;
 
-  top: calc(50% - #{($icon-font-size / 2) * 1.1});
+  top: calc(50% - #{math.div($icon-font-size, 2) * 1.1});
   margin-right: 0.3em;
 
   font-size: $icon-font-size;
