@@ -13,12 +13,6 @@
     height: 5.5rem;
     display: flex;
     align-items: center;
-
-    .auk-accordion__title  {
-      font-weight: 500;
-      font-size: 1.8rem;
-      margin: 0;
-    }
   }
 
   .auk-accordion-panel__item {
@@ -43,4 +37,20 @@
       }
     }
   }
+}
+
+.auk-accordion-panel__title-container {
+  padding: 0 1.5rem;
+}
+
+.auk-accordion-panel__title {
+  margin: 0;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.auk-accordion-panel__title--small {
+  font-size: 1.6rem;
 }
