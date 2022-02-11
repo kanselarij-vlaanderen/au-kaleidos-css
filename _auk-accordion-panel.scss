@@ -8,13 +8,6 @@
   border-radius: .3rem;
   overflow: hidden;
 
-  .auk-accordion-panel__header {
-    padding: 0 2rem;
-    height: 5.5rem;
-    display: flex;
-    align-items: center;
-  }
-
   .auk-accordion-panel__item {
     .auk-toolbar-complex__left .auk-icon:first-child {
       transform: rotate(90deg);
@@ -37,6 +30,20 @@
       }
     }
   }
+}
+
+.auk-accordion-panel__header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.auk-accordion-panel__header--regular {
+  height: 5.5rem;
+}
+
+.auk-accordion-panel__header--large {
+  height: 7.5rem;
 }
 
 .auk-accordion-panel__title-container {
