@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -f css/*",
     "dev": "npm run clean && sass --watch auk-standalone.scss:css/auk-standalone.css auk-base.scss:css/auk-base.css",
-    "build": "npm run clean && sass auk-standalone.scss css/auk-standalone.css && sass auk-base.scss css/auk-base.css",
+    "build": "npm run clean && sass auk-standalone.scss:css/auk-standalone.css auk-base.scss:css/auk-base.css",
     "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.42.1"
+    "sass": "^1.49.7"
   },
   "dependencies": {}
 }
