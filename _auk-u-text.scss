@@ -84,7 +84,15 @@
   }
 }
 
-.auk-u-text-condensed-line-height {
+.auk-u-text-line-height--default {
+  line-height: 1.6 !important;
+}
+
+.auk-u-text-line-height--small {
+  line-height: 1.3 !important;
+}
+
+.auk-u-text-line-height--xsmall {
   line-height: 1 !important;
 }
 
