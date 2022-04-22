@@ -26,6 +26,26 @@
   display: inline !important;
 }
 
+@each $breakpoint, $width in $g-breakpoints {
+  @include breakpoint($breakpoint) {
+    .auk-u-hidden\@#{$breakpoint} {
+      display: none !important;
+    }
+
+    .auk-u-inline-block\@#{$breakpoint} {
+      display: inline-block !important;
+    }
+
+    .auk-u-block\@#{$breakpoint} {
+      display: block !important;
+    }
+
+    .auk-u-inline\@#{$breakpoint} {
+      display: inline !important;
+    }
+  }
+}
+
 .auk-u-align-middle {
   vertical-align: middle !important;
 }
@@ -82,3 +102,9 @@
 .auk-u-position-relative {
   position: relative !important;
 }
+
+.auk-u-height--xsmall { height: 6rem; }
+.auk-u-height--small { height: 15rem; }
+.auk-u-height--medium { height: 30rem; }
+.auk-u-height--large { height: 40rem; }
+.auk-u-height--xlarge { height: 50rem; }

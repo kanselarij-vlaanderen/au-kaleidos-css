@@ -26,11 +26,13 @@ $g-base-background: #fff;
 /* Breakpoints
    ========================================================================== */
 
-$g-bp1: 400px;
-$g-bp2: 700px;
-$g-bp3: 900px;
-$g-bp4: 1200px;
-$g-bp5: 1600px;
+$g-breakpoints: (
+  screen-xsmall: 400px, 
+  screen-small: 768px,
+  screen-medium: 992px,
+  screen-large: 1200px,
+  screen-xlarge: 1600px
+);
 
 /* Bars
    ========================================================================== */

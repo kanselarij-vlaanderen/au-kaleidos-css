@@ -1,126 +1,161 @@
-@use "sass:math";
-
 /* ==========================================================================
-  Grid
-  ---
-  Basic flex-based grid system
-  Based on flexbox and calc()
-  Support:
-     * IE10 and up
-     * Edge, Chrome, Safari, Firefox (except very old versions)
+   Grid
+   ---
+   Basic grid system
+
+   @brenner-company (Karel Persoons): Some styling (regarding col-start & -end) is commented out for the moment because I'm not sure this is necessary at all and it generates a quite few extra Kilobytes. 
    ========================================================================== */
 
 $auk-o-grid-columns: 12 !default;
-$auk-o-grid-column-gap: 1.6rem !default;
-
-$auk-o-grid-bp1: 400px;
-$auk-o-grid-bp2: 768px;
-$auk-o-grid-bp3: 992px;
-$auk-o-grid-bp4: 1200px;
-
-.auk-o-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -(math.div($auk-o-grid-column-gap, 2));
-  margin-right: -(math.div($auk-o-grid-column-gap, 2));
-}
+$auk-o-grid-column-gap: 1.5rem !default;
+  
 
 /* Grid columns (default)
   ========================================================================== */
 
-[class*='auk-o-grid-col'] {
-  flex: 1 0 auto;
-  min-width: 0;
-  margin-left: math.div($auk-o-grid-column-gap, 2);
-  margin-right: math.div($auk-o-grid-column-gap, 2);
+.auk-o-grid {
+  display: grid;
+  gap: $auk-o-grid-column-gap;
 }
 
-// Activate columns regardless of breakpoint
-$i: 0;
+.auk-o-grid {
+  grid-template-columns: repeat($auk-o-grid-columns, 1fr);
 
-@while($i < $auk-o-grid-columns) {
-  .auk-o-grid-col-#{$i + 1} {
-    width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
-    flex: 1 1 auto;
+  > * {
+    grid-column: span var(--auk-o-grid-col-span, $auk-o-grid-columns) / span var(--auk-o-grid-col-span, $auk-o-grid-columns);
   }
-  $i: $i + 1;
 }
 
-// Activate columns only from breakpoint 1
-$i: 0;
-
-@media (min-width: $auk-o-grid-bp1) {
-
-  [class*='auk-o-grid-col-bp1-'] {
-      flex: 1 1 auto;
+@for $i from 1 through $auk-o-grid-columns {
+  .auk-o-grid-col-#{$i} {
+    --auk-o-grid-col-span: #{$i};
+  
   }
 
-  @while($i < $auk-o-grid-columns) {
-    .auk-o-grid-col-bp1-#{$i + 1} {
-      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
+  // .auk-o-grid-col-start-#{$i} {
+  //   grid-column-start: #{$i}; 
+  // }
+
+  // .auk-o-grid-col-end-#{$i+1} {
+  //   grid-column-end: #{$i+1};
+  // }
+}
+
+.auk-o-grid-col-start {
+  grid-column-start: 1;
+}
+
+.auk-o-grid-col-end {
+  grid-column-end: -1;
+}
+
+
+/* Automatic grid columns
+  ========================================================================== */
+
+.auk-o-grid-auto {
+  display: grid;
+  gap: $auk-o-grid-column-gap;
+}
+
+.auk-o-grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+[class*="auk-o-grid-auto--"] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--auk-o-grid-col-min-width), 1fr));
+}
+
+.auk-o-grid-auto--min-width-xsmall {
+  --auk-o-grid-col-min-width: 8rem;
+
+}
+.auk-o-grid-auto--min-width-small {
+  --auk-o-grid-col-min-width: 10rem;
+}
+
+.auk-o-grid-auto--min-width-medium {
+  --auk-o-grid-col-min-width: 15rem;
+}
+
+.auk-o-grid-auto--min-width-large {
+  --auk-o-grid-col-min-width: 20rem;
+}
+
+.auk-o-grid-auto--min-width-xlarge {
+  --auk-o-grid-col-min-width: 25rem;
+}
+
+
+/* Breakpoints
+  ========================================================================== */
+
+@each $breakpoint, $width in $g-breakpoints {
+  @include breakpoint($breakpoint) {
+    @for $i from 1 through $auk-o-grid-columns {
+      .auk-o-grid-col-#{$i}\@#{$breakpoint} {
+        --auk-o-grid-col-span: #{$i};
+      }
+  
+      // .auk-o-grid-col-start-#{$i}\@#{$breakpoint} {
+      //   grid-column-start: #{$i};
+      // }
+  
+      // .auk-o-grid-col-end-#{$i+1}\@#{$breakpoint} {
+      //   grid-column-end: #{$i+1};
+      // }
     }
-    $i: $i + 1;
-  }
-}
-
-// Activate columns only from breakpoint 2
-$i: 0;
-
-@media (min-width: $auk-o-grid-bp2) {
-
-  [class*='auk-o-grid-col-bp2-'] {
-      flex: 1 1 auto;
-  }
-
-  @while($i < $auk-o-grid-columns) {
-    .auk-o-grid-col-bp2-#{$i + 1} {
-      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
+  
+    .auk-o-grid-auto\@#{$breakpoint} { grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
+  
+    .auk-o-grid-auto--min-width-xsmall\@#{$breakpoint} {
+      --auk-o-grid-col-min-width: 8rem;
     }
-    $i: $i + 1;
-  }
-}
 
-$i: 0;
-
-// Activate columns only from breakpoint 3
-@media (min-width: $auk-o-grid-bp3) {
-
-  [class*='auk-o-grid-col-bp3-'] {
-      flex: 1 1 auto;
-  }
-
-  @while($i < $auk-o-grid-columns) {
-    .auk-o-grid-col-bp3-#{$i + 1} {
-      width: calc(#{ math.div( $i + 1 , $auk-o-grid-columns)  * 100}% - #{$auk-o-grid-column-gap});
+    .auk-o-grid-auto--min-width-small\@#{$breakpoint} {
+      --auk-o-grid-col-min-width: 10rem;
     }
-    $i: $i + 1;
+
+    .auk-o-grid-auto--min-width-medium\@#{$breakpoint} {
+      --auk-o-grid-col-min-width: 15rem;
+    }
+
+    .auk-o-grid-auto--min-width-large\@#{$breakpoint} {
+      --auk-o-grid-col-min-width: 20rem;
+    }
+
+    .auk-o-grid-auto--min-width-xlarge\@#{$breakpoint} {
+      --auk-o-grid-col-min-width: 25rem;
+    }
+  
+    // .auk-o-grid-col-start\@#{$breakpoint} { grid-column-start: 1; }
+    // .auk-o-grid-col-end\@#{$breakpoint}   { grid-column-end: -1; }
+    
+    // .auk-o-grid-col-start-auto\@#{$breakpoint} { grid-column-start: auto; }
+    // .auk-o-grid-col-end-auto\@#{$breakpoint}   { grid-column-end: auto; }
   }
 }
+
 
 /* Grid columns (modifiers)
   ========================================================================== */
 
-.auk-o-grid--no-wrap {
-  flex-wrap: nowrap;
-}
-
-.auk-o-grid-col-static {
-  flex: none;
-}
-
-.auk-o-grid-col-flex {
-  flex: 1 1 auto;
-}
-
-.auk-o-grid--reverse {
-  flex-direction: row-reverse;
-}
-
 .auk-o-grid--no-gutter {
-  margin: 0;
+  gap: 0;
+}
 
-  [class*='auk-o-grid-col'] {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.auk-o-grid--vertical-center {
+  align-items: center !important;
+}
+
+.auk-o-grid--align-start {
+  align-items: start !important;
+}
+
+.auk-o-grid--align-end {
+  align-items: end !important;
+}
+
+.auk-o-grid--align-baseline {
+  align-items: baseline !important;
 }
