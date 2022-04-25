@@ -34,6 +34,17 @@ $g-breakpoints: (
   screen-xlarge: 1600px
 );
 
+/* Dimensions
+   ========================================================================== */
+
+$g-dimensions: (
+   xsmall: 6rem, 
+   small: 15rem,
+   medium: 30rem,
+   large: 40rem,
+   xlarge: 50rem
+);
+
 /* Bars
    ========================================================================== */
 

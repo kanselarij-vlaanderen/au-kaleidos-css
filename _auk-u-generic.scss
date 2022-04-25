@@ -2,14 +2,6 @@
   Utilities: generic (no category)
   ========================================================================== */
 
-.auk-u-maximize-width {
-  width: 100% !important;
-}
-
-.auk-u-maximize-height {
-  height: 100% !important;
-}
-
 .auk-u-hidden {
   display: none !important;
 }
@@ -102,9 +94,3 @@
 .auk-u-position-relative {
   position: relative !important;
 }
-
-.auk-u-height--xsmall { height: 6rem; }
-.auk-u-height--small { height: 15rem; }
-.auk-u-height--medium { height: 30rem; }
-.auk-u-height--large { height: 40rem; }
-.auk-u-height--xlarge { height: 50rem; }
