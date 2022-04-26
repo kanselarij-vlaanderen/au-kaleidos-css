@@ -231,3 +231,24 @@ $i: 1;
     background-color: #fff;
   }
 }
+
+/* Table with sticky action column
+  ========================================================================== */
+
+.auk-table--sticky-action-column {
+  border-collapse: separate;
+
+  thead th:last-child,
+  tbody td:last-child {
+    position: sticky;
+    right: 0;
+
+    border-left: .1rem solid $auk-gray-200;
+    width: 0; // keep column as small as possible
+    background-color: #fff;
+  }
+
+  tbody td:last-child {
+    text-align: center;
+  }
+}
