@@ -30,7 +30,7 @@
 .auk-progress-bar__bar:before {
   content: "";
   width: calc(var(--value) * 100%);
-  background: $auk-blue-500;
+  background-color: $auk-blue-500;
   animation: fill 250ms linear 1;
 }
 
@@ -45,6 +45,6 @@
 
 .auk-progress-bar--success {
   .auk-progress-bar__bar:before {
-    background: $auk-green-500;
+    background-color: $auk-green-500;
   }
 }

@@ -86,7 +86,7 @@
 
 .auk-checkbox input:disabled ~ .auk-checkbox__box {
   border: .1rem solid $auk-gray-300;
-  background: $auk-gray-200;
+  background-color: $auk-gray-200;
 }
 
 .auk-checkbox input:checked:disabled ~ .auk-checkbox__box:after {

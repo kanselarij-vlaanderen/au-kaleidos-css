@@ -16,7 +16,7 @@
 
 .auk-document-card {
   &.active {
-    background: $auk-gray-100;
+    background-color: $auk-gray-100;
     &:after {
       content: "";
       height: calc(100% + 2px);
@@ -25,7 +25,7 @@
       bottom: -1px;
       width: 0.4rem;
       position: absolute;
-      background: $auk-blue-500;
+      background-color: $auk-blue-500;
     }
   }
 }

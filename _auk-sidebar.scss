@@ -5,7 +5,7 @@
 .auk-sidebar {
   width: 24rem;
   height: 100%;
-  background: $auk-gray-100;
+  background-color: $auk-gray-100;
 
   [data-sidebar-collapsed-only] {
     display: none;
@@ -81,7 +81,7 @@
 }
 
 .auk-sidebar__item--active a {
-  background: $auk-gray-200;
+  background-color: $auk-gray-200;
   color: $auk-gray-800;
 }
 
@@ -107,11 +107,11 @@
   ========================================================================== */
 
 .auk-sidebar--gray-100 {
-  background: $auk-gray-100;
+  background-color: $auk-gray-100;
 }
 
 .auk-sidebar--gray-200 {
-  background: $auk-gray-200;
+  background-color: $auk-gray-200;
 
   .auk-sidebar__item a:hover {
       background-color: $auk-gray-300;
@@ -119,7 +119,7 @@
 
   .auk-sidebar__item a.active,
   .auk-sidebar__item--active a {
-    background: $auk-gray-300;
+    background-color: $auk-gray-300;
   }
 }
 

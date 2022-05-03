@@ -37,7 +37,7 @@
 
 .auk-pill--default {
   color: $auk-gray-600;
-  background: $auk-gray-100;
+  background-color: $auk-gray-100;
   border: .1rem solid $auk-gray-300;
 }
 
@@ -49,17 +49,17 @@
 
 .auk-pill--success {
   color: #FFF;
-  background: $auk-green-700;
+  background-color: $auk-green-700;
 }
 
 .auk-pill--danger {
   color: #FFF;
-  background: $auk-red-500;
+  background-color: $auk-red-500;
 }
 
 .auk-pill--warning {
   color: $auk-color-text;
-  background: $auk-yellow-500;
+  background-color: $auk-yellow-500;
   .auk-icon {
     color: $auk-yellow-700;
   }

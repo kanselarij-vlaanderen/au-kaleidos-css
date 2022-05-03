@@ -63,7 +63,7 @@
 
 .auk-content {
   pre {
-    background: $auk-gray-100;
+    background-color: $auk-gray-100;
     padding: 1.5rem;
     margin: 0 0 1rem;
     font-size: 75%;
@@ -79,7 +79,7 @@
   p > code,
   li > code {
     font-size: 85%;
-    background: $auk-gray-100;
+    background-color: $auk-gray-100;
     padding: 0.2rem;
     border-radius: 0.2rem;
     color: $auk-red-500;

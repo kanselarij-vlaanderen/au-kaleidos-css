@@ -14,11 +14,13 @@
 
 .auk-tabs {
   button {
+    appearance: none;
+    background-color: $auk-white;
+    border: none;
+    padding: 0;
+
     font-family: flanders-sans, sans-serif;
     font-size: 1.5rem;
-    border: none;
-    appearance: none;
-    padding: 0;
   }
 
   a, button {
@@ -32,7 +34,7 @@
     white-space: nowrap;
 
     &:hover {
-      background: $auk-gray-100;
+      background-color: $auk-gray-100;
     }
 
     @include element-focus;

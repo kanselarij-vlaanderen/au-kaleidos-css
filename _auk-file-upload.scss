@@ -39,20 +39,20 @@
 
 .auk-file-upload--gray-100 {
   .auk-file-upload__content {
-    background: $auk-gray-100;
+    background-color: $auk-gray-100;
   }
 }
 
 .auk-file-upload--success {
   .auk-file-upload__content {
-    background: $auk-green-100;
+    background-color: $auk-green-100;
     border-color: $auk-green-300;
   }
 }
 
 .auk-file-upload--error {
   .auk-file-upload__content {
-    background: $auk-red-50;
+    background-color: $auk-red-50;
     border-color: $auk-red-300;
   }
 }
