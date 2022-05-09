@@ -54,7 +54,11 @@
 }
 
 .auk-sidebar--small {
-  width: 20rem;
+  width: 25rem;
+}
+
+.auk-sidebar--xsmall {
+  width: 17.5rem;
 }
 
 /* Sidebar items
@@ -65,6 +69,15 @@
   text-decoration: none;
   padding: 1rem 2rem;
   color: $auk-color-text;
+  transition: background-color 200ms;
+
+  .auk-sidebar--left[data-collapsed="true"] & {
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+
+  .auk-sidebar--right[data-collapsed="true"] & {
+    padding: 1rem 1.5rem 1rem 1rem;
+  }
 
   &:hover {
     background-color: $auk-gray-200;
