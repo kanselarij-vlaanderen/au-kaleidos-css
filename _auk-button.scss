@@ -270,8 +270,24 @@ a.auk-button {
 /* Sizes
    ========================================================================== */
 
-.auk-button--size-s {
-  font-size: 1.3rem;
+.auk-button--size-small {
+  padding: .5rem .8rem;
+
+  font-size: 1.5rem;
+
+  &.auk-button--icon {
+    padding: .5rem .6rem;
+  }
+}
+
+.auk-button--size-xsmall {
+  padding: .25rem .4rem;
+
+  font-size: 1.5rem;
+
+  &.auk-button--icon {
+    padding: .25rem .35rem;
+  }
 }
 
 
