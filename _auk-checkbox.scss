@@ -57,12 +57,6 @@
   }
 }
 
-/* When the checkbox is checked, add a blue background */
-.auk-checkbox input:checked ~ .auk-checkbox__box {
-  background-color: $auk-blue-500;
-  border: .1rem solid $auk-blue-500;
-}
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .auk-checkbox__box:after {
   content: "";
@@ -70,16 +64,63 @@
   display: none;
 }
 
+/* When the checkbox is checked or in an indeterminate state, add a blue background */
+.auk-checkbox {
+  input {
+    &:checked,
+    &:indeterminate {
+      ~ .auk-checkbox__box {
+        background-color: $auk-blue-500;
+        border: .1rem solid $auk-blue-500;
+      }
+    }
+  }
+}
+
 /* Show the checkmark when checked */
-.auk-checkbox input:checked ~ .auk-checkbox__box:after {
-  display: block;
-  left: .5rem;
-  top: 0;
-  width: .6rem;
-  height: 1.2rem;
-  border: solid white;
-  border-width: 0 .2rem .2rem 0;
-  transform: rotate(45deg);
+.auk-checkbox {
+  input {
+    &:checked,
+    &:indeterminate {
+      ~ .auk-checkbox__box:after {
+        display: block;
+      }
+    }
+  }
+}
+
+.auk-checkbox {
+  input {
+    &:checked {
+      ~ .auk-checkbox__box:after {
+        left: .5rem;
+        top: 0;
+        width: .6rem;
+        height: 1.2rem;
+
+        border: solid $auk-white;
+        border-width: 0 .2rem .2rem 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.auk-checkbox {
+  input {
+    &:indeterminate {
+      ~ .auk-checkbox__box:after {
+        left: .2rem;
+        top: .7rem;
+        width: 1.2rem;
+        height: .2rem;
+
+        border: none;
+        background-color: $auk-white;
+        transform: none;
+      }
+    }
+  }
 }
 
 .auk-checkbox input:not(:disabled):focus ~ .auk-checkbox__box,
@@ -95,6 +136,10 @@
 
 .auk-checkbox input:checked:disabled ~ .auk-checkbox__box:after {
   border-color: $auk-gray-500;
+}
+
+.auk-checkbox input:indeterminate:disabled ~ .auk-checkbox__box:after {
+  background-color: $auk-gray-500;
 }
 
 .auk-checkbox-list--inline {
