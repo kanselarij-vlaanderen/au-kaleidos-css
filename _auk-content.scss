@@ -3,10 +3,8 @@
    ========================================================================== */
 
 .auk-content p {
-  font-size: 1.6rem;
   margin: 0 0 1.5rem;
   line-height: 1.6;
-  color: $auk-gray-700;
 }
 
 .auk-content strong {
@@ -62,6 +60,23 @@
 }
 
 .auk-content {
+  ol,
+  ul {
+    list-style: revert;
+    padding-inline-start: 2rem;
+  }
+
+  ol,
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 1.5rem;
+
+    ol,
+    ul {
+      margin-block-end: 0;
+    }
+  }
+
   pre {
     background-color: $auk-gray-100;
     padding: 1.5rem;
