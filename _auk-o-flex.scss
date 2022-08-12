@@ -10,7 +10,7 @@
 $auk-o-flex-gutter-width: 0.8rem !default;
 
 /* Utility classes
-     ========================================================================== */
+   ========================================================================== */
 
 .auk-o-flex {
   display: flex !important;
@@ -77,8 +77,23 @@ $auk-o-flex-gutter-width: 0.8rem !default;
   margin-right: $auk-o-flex-gutter-width * 2 !important;
 }
 
+/* Gap classes
+   ========================================================================== */
+
+.auk-o-flex-gap--small {
+  gap: .5rem;
+}
+
+.auk-o-flex-gap--medium {
+  gap: 1rem;
+}
+
+.auk-o-flex-gap--large {
+  gap: 1.5rem;
+}
+
 /* Flexible items
-     ========================================================================== */
+   ========================================================================== */
 
 .auk-o-flex__item {
   flex: 1 !important;
