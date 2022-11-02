@@ -57,3 +57,12 @@
     flex-wrap: nowrap;
   }
 }
+
+.auk-document-card--clickable {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $auk-gray-100;
+  }
+}

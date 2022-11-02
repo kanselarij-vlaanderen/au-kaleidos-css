@@ -1,5 +1,5 @@
 /* ==========================================================================
-  auk-icon
+   auk-icon
    ========================================================================== */
 
 .auk-icon {
@@ -13,6 +13,20 @@
     height: 100%;
     line-height: 1;
   }
+}
+
+/* Font styling placeholder
+   ========================================================================== */
+
+%auk-icons-font-style {
+  font-family: auk-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Size Variations

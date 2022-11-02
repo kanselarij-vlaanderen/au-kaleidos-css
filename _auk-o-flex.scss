@@ -65,6 +65,11 @@ $auk-o-flex-gutter-width: 0.8rem !default;
   flex-wrap: wrap !important;
 }
 
+.auk-o-flex--no-wrap {
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
 .auk-o-flex--align-self-start {
   align-self: flex-start !important;
 }
@@ -101,4 +106,8 @@ $auk-o-flex-gutter-width: 0.8rem !default;
 
 .auk-o-flex__item--shrink {
   flex: 0 1 0 !important;
+}
+
+.auk-o-flex__item--fix {
+  flex: 0 0 auto !important;
 }
