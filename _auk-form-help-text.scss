@@ -9,10 +9,7 @@
   display: flex;
   align-items: center;
   font-size: 1.3rem;
-  .auk-input + &,
-  .auk-input-with-icon + &  {
-    margin-top: 0.5rem;
-  }
+
   .auk-icon {
     margin-right: 0.5rem;
   }
@@ -20,6 +17,7 @@
 
 .auk-form-help-text--danger {
   color: $auk-red-700;
+
   .auk-icon {
     color: $auk-red-500;
   }
@@ -27,6 +25,7 @@
 
 .auk-form-help-text--success {
   color: $auk-green-700;
+
   .auk-icon {
     color: $auk-green-500;
   }
@@ -34,6 +33,7 @@
 
 .auk-form-help-text--warning {
   color: $auk-yellow-700;
+  
   .auk-icon {
     color: $auk-yellow-500;
   }
