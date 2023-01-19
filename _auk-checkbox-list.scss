@@ -1,0 +1,29 @@
+/* ==========================================================================
+   auk-checkbox-list
+   ========================================================================== */
+
+.auk-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  > .auk-checkbox-list {
+    margin-left: 2rem;
+  }
+
+  + .auk-checkbox-list {
+    margin-top: .5rem;
+  }
+}
+
+.auk-checkbox-list--inline {
+  flex-direction: row; // reset direction
+  align-items: center;
+  gap: 2rem;
+
+  &:has(.auk-checkbox-list) {
+    > .auk-checkbox-list {
+      @include style-warning('Nested checkbox lists can\'t be used when the parent checkbox list has @layout \'inline\' defined.');
+    }
+  }
+}
