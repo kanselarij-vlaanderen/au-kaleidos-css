@@ -12,36 +12,39 @@
   border-bottom: 0.1rem solid $auk-gray-300;
 }
 
-.auk-tabs {
-  button {
-    appearance: none;
-    background-color: $auk-white;
-    border: none;
-    padding: 0;
-
-    font-family: flanders-sans, sans-serif;
-    font-size: 1.5rem;
-  }
-
-  a, button {
-    color: $auk-blue-500;
-    font-weight: 500;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-bottom: 0.3rem solid transparent;
-    white-space: nowrap;
-
-    &:hover {
-      background-color: $auk-gray-100;
-    }
-
-    @include element-focus;
-  }
+.auk-tabs__tab {
+  //
 }
 
-.auk-tabs__tab-inner {
+.auk-tabs__tab__link {
+  display: flex;
+  align-items: center;
+
+  height: 5rem;
+  padding: 0;
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  background-color: transparent;
+
+  color: $auk-blue-500;
+  font-family: flanders-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:is(button) {
+    appearance: none;
+  }
+
+  &:hover {
+    background-color: $auk-gray-100;
+  }
+
+  @include element-focus;
+}
+
+.auk-tabs__tab__inner {
   padding: 0 1rem;
   position: relative;
   display: flex;
@@ -54,19 +57,17 @@
   }
 }
 
-.auk-tabs__tab-counter {
+.auk-tabs__tab__counter {
   font-weight: 400;
   color: $auk-blue-500;
 }
 
-.auk-tabs__tab--active {
-  a, button {
-    color: $auk-gray-900;
-    border-bottom: 0.3rem solid $auk-gray-900;
+.auk-tabs__tab__link--active {
+  color: $auk-gray-900;
+  border-bottom: 0.3rem solid $auk-gray-900;
 
-    .auk-tabs__tab-counter {
-      color: $auk-gray-600;
-    }
+  .auk-tabs__tab__counter {
+    color: $auk-gray-600;
   }
 }
 
@@ -79,41 +80,41 @@
 }
 
 .auk-tabs--reversed {
-  a, button {
+  .auk-tabs__tab__link {
     border-top: 0.3rem solid transparent;
     border-bottom: none;
+
+    @include element-focus;
   }
 }
 
-.auk-tabs--reversed .auk-tabs__tab-inner {
+.auk-tabs--reversed .auk-tabs__tab__inner {
   bottom: 0.15rem;
 }
 
-.auk-tabs--reversed .auk-tabs__tab--active {
-  a, button {
-    color: $auk-gray-900;
-    border-top: 0.3rem solid $auk-gray-900;
-    border-bottom: none;
-  }
+.auk-tabs--reversed .auk-tabs__tab__link--active {
+  color: $auk-gray-900;
+  border-top: 0.3rem solid $auk-gray-900;
+  border-bottom: none;
 }
 
 /* Hierarchical back tab
   ========================================================================== */
 
-.auk-tabs__hierarchical-back.auk-tabs__tab--active {
-  a, button {
+.auk-tabs__hierarchical-back {
+  .auk-tabs__tab__link--active {
     color: $auk-blue-500;
     border-bottom: 0.3rem solid transparent;
   }
 }
 
-.auk-tabs--reversed .auk-tabs__hierarchical-back.auk-tabs__tab--active {
-  a, button {
+.auk-tabs--reversed .auk-tabs__hierarchical-back {
+  .auk-tabs__tab__link--active {
     border-top: 0.3rem solid transparent;
     border-bottom: none;
   }
 }
 
-.auk-tabs__hierarchical-back .auk-tabs__label { 
+.auk-tabs__hierarchical-back .auk-tabs__tab__label { 
   display: none;
 }
