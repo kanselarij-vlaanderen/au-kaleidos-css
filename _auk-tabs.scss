@@ -64,7 +64,11 @@
 
 .auk-tabs__tab__link--active {
   color: $auk-gray-900;
-  border-bottom: 0.3rem solid $auk-gray-900;
+
+  &,
+  &:focus {
+    border-bottom: 0.3rem solid $auk-gray-900;
+  }
 
   .auk-tabs__tab__counter {
     color: $auk-gray-600;
@@ -94,8 +98,12 @@
 
 .auk-tabs--reversed .auk-tabs__tab__link--active {
   color: $auk-gray-900;
-  border-top: 0.3rem solid $auk-gray-900;
-  border-bottom: none;
+
+  &,
+  &:focus {
+    border-top: 0.3rem solid $auk-gray-900;
+    border-bottom: none;
+  }
 }
 
 /* Hierarchical back tab
