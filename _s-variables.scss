@@ -16,13 +16,6 @@ $g-base-line-height: 1.5;
 $g-headings-font-weight: 500;
 $g-headings-font-family: flanders-sans, sans-serif;
 
-/* Colors
-   ========================================================================== */
-
-$g-text-color: $auk-color-text;
-$g-headings-color: $auk-color-heading;
-$g-base-background: #fff;
-
 /* Breakpoints
    ========================================================================== */
 
@@ -44,17 +37,3 @@ $g-dimensions: (
    large: 40rem,
    xlarge: 50rem
 );
-
-/* Bars
-   ========================================================================== */
-
-$g-bar-size-regular: 5rem;
-$g-bar-size-small: 4rem;
-$g-bar-size-medium: 5rem;
-$g-bar-size-large: 6.5rem;
-
-/* General
-   ========================================================================== */
-
-$g-spacer-unit: 0.5rem;
-
