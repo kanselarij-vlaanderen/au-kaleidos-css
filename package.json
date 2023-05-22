@@ -1,6 +1,6 @@
 {
   "name": "@kanselarij-vlaanderen/au-kaleidos-css",
-  "version": "3.5.1",
+  "version": "3.7.0-beta.0",
   "description": "AppUniversum inspired Kaleidos CSS as a separate package.",
   "main": "auk-standalone.css",
   "scripts": {
