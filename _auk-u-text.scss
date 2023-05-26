@@ -62,18 +62,6 @@
   text-decoration: underline !important;
 }
 
-.auk-u-text-letter-spacing--default {
-  letter-spacing: normal !important;
-}
-
-.auk-u-text-letter-spacing--small {
-  letter-spacing: 0.05em !important;
-}
-
-.auk-u-text-dotted {
-  border-bottom: .1rem dotted $auk-gray-400 !important;
-}
-
 .auk-u-text-uppercase {
   text-transform: uppercase !important;
 }
@@ -98,14 +86,6 @@
 
 .auk-u-text-family-serif {
   font-family: flanders-serif, serif !important;
-}
-
-.auk-u-text-code {
-  background-color: #eee;
-  color: #905;
-  padding: 0.2rem 0.4rem;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1.3rem;
 }
 
 .auk-u-overflow-wrap-anywhere {

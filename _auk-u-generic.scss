@@ -18,26 +18,6 @@
   display: inline !important;
 }
 
-@each $breakpoint, $width in $g-breakpoints {
-  @include breakpoint($breakpoint) {
-    .auk-u-hidden\@#{$breakpoint} {
-      display: none !important;
-    }
-
-    .auk-u-inline-block\@#{$breakpoint} {
-      display: inline-block !important;
-    }
-
-    .auk-u-block\@#{$breakpoint} {
-      display: block !important;
-    }
-
-    .auk-u-inline\@#{$breakpoint} {
-      display: inline !important;
-    }
-  }
-}
-
 .auk-u-align-middle {
   vertical-align: middle !important;
 }
@@ -55,7 +35,6 @@
   position: absolute !important;
   height: 1px; width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
 
