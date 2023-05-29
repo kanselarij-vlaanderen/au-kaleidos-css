@@ -24,8 +24,10 @@ p {
   word-break: break-word;
   white-space: normal;
 
-  &::first-letter {
-    text-transform: uppercase;
+  &:not(.au-c-content p, .say-editor p) { // only target paragraphs that are not in a content block or in the rdfa-editor (fix for KAS-4057 within kanselarij-vlaanderen/frontend-kaleidos)
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }
 
