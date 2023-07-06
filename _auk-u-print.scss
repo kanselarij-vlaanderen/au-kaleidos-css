@@ -5,6 +5,7 @@
 @media print {
   .auk-icon,
   .auk-u-text-muted {
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
 
