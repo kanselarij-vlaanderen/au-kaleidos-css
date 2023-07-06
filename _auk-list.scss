@@ -58,8 +58,7 @@
   &:hover,
   &:focus {
     background-color: $auk-gray-100;
-    .auk-avatar,
-    .auk-badge {
+    .auk-avatar {
       background-color: $auk-blue-100;
     }
     span {
