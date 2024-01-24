@@ -13,7 +13,10 @@
   }
 }
 
-.auk-loadable-content__content,
-.auk-loadable-content > .auk-loader-wrapper {
+.auk-loadable-content > * {
   grid-area: 1/1/1/1;
+}
+
+.auk-loadable-content__content {
+  min-width: 0;
 }
