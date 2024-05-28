@@ -10,7 +10,7 @@
   align-items: center;
   font-size: 1.3rem;
 
-  .auk-icon {
+  .au-c-icon {
     margin-right: 0.5rem;
   }
 }
@@ -18,7 +18,7 @@
 .auk-form-help-text--danger {
   color: $auk-red-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-red-500;
   }
 }
@@ -26,7 +26,7 @@
 .auk-form-help-text--success {
   color: $auk-green-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-green-500;
   }
 }
@@ -34,7 +34,7 @@
 .auk-form-help-text--warning {
   color: $auk-yellow-700;
   
-  .auk-icon {
+  .au-c-icon {
     color: $auk-yellow-500;
   }
 }

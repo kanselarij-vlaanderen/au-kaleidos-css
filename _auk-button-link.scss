@@ -77,8 +77,8 @@
 }
 
 .auk-button-link {
-  .auk-icon + .auk-button__label,
-  .auk-button__label + .auk-icon {
+  .au-c-icon + .auk-button__label,
+  .auk-button__label + .au-c-icon {
     margin-left: .5rem;
   }
 }
@@ -87,14 +87,14 @@
   padding: .8rem;
 }
 
-.auk-button-link .auk-icon {
+.auk-button-link .au-c-icon {
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
   line-height: 0;
 }
 
-.auk-button-link--small .auk-icon {
+.auk-button-link--small .au-c-icon {
   width: 1.5rem;
   height: 1.5rem;
 }

@@ -41,14 +41,14 @@
     border-left-style: solid;
   }
 
-  .auk-icon {
-    width: 1.8rem;
-    height: 1.8rem;
+  .au-c-icon {
+    --au-icon-size: 1.8rem;
   }
+}
 
-  .auk-icon--small {
-    width: 1.5rem;
-    height: 1.5rem;
+.auk-status-pill--small {
+  .au-c-icon {
+    --au-icon-size: 1.5rem;
   }
 }
 
@@ -64,7 +64,7 @@
 
   color: $auk-blue-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-blue-700;
   }
 
@@ -78,7 +78,7 @@
 
   color: $auk-green-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-green-700;
   }
 
@@ -92,7 +92,7 @@
 
   color: $auk-red-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-red-700;
   }
 
@@ -106,7 +106,7 @@
 
   color: $auk-gray-700;
 
-  .auk-icon {
+  .au-c-icon {
     color: $auk-gray-700;
   }
 

@@ -9,7 +9,7 @@
   overflow: hidden;
 
   .auk-accordion-panel__item {
-    .auk-toolbar-complex__left .auk-icon:first-child {
+    .auk-toolbar-complex__left .au-c-icon:first-child {
       transform: rotate(90deg);
       transition: .150s ease-in-out;
     }
@@ -25,7 +25,7 @@
         display: none;
       }
 
-      .auk-toolbar-complex__left .auk-icon:first-child {
+      .auk-toolbar-complex__left .au-c-icon:first-child {
         transform: rotate(0deg);
       }
     }
