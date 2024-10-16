@@ -101,7 +101,8 @@
 .auk-sidebar__item--styled {
   position: relative;
 
-  &.auk-sidebar__item--active {
+  &.auk-sidebar__item--active,
+  > a.active {
     &:before {
       content: "";
       display: block;
