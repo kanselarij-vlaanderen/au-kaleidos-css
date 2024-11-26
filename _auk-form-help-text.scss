@@ -1,3 +1,5 @@
+@use "settings/s-colors";
+
 /* ==========================================================================
   auk-form-help-text
   ---
@@ -5,7 +7,7 @@
    ========================================================================== */
 
 .auk-form-help-text {
-  color: $auk-gray-600;
+  color: s-colors.$gray-600;
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -16,26 +18,26 @@
 }
 
 .auk-form-help-text--danger {
-  color: $auk-red-700;
+  color: s-colors.$red-700;
 
   .au-c-icon {
-    color: $auk-red-500;
+    color: s-colors.$red-500;
   }
 }
 
 .auk-form-help-text--success {
-  color: $auk-green-700;
+  color: s-colors.$green-700;
 
   .au-c-icon {
-    color: $auk-green-500;
+    color: s-colors.$green-500;
   }
 }
 
 .auk-form-help-text--warning {
-  color: $auk-yellow-700;
+  color: s-colors.$yellow-700;
   
   .au-c-icon {
-    color: $auk-yellow-500;
+    color: s-colors.$yellow-500;
   }
 }
 

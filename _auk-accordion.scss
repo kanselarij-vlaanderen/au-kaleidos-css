@@ -1,3 +1,6 @@
+@use "settings/s-colors";
+@use "settings/s-globals";
+
 /* ==========================================================================
   auk-accordion
    ========================================================================== */
@@ -23,36 +26,36 @@
     width: 100%;
     border: .15rem solid transparent;
     border-radius: .3rem;
-    background-color: $auk-white;
+    background-color: s-colors.$white;
 
     cursor: pointer;
 
-    color: $auk-blue-500;
-    font-family: $g-base-font-family;
+    color: s-colors.$blue-500;
+    font-family: s-globals.$base-font-family;
     font-size: 1.5rem;
 
     &:hover {
-      background-color: $auk-gray-100;
+      background-color: s-colors.$gray-100;
     }
 
     &:focus {
-      border: .15rem solid $auk-yellow-500;
-      background-color: $auk-gray-100;
+      border: .15rem solid s-colors.$yellow-500;
+      background-color: s-colors.$gray-100;
     }
 
     &:active {
-      background-color: $auk-gray-200;
+      background-color: s-colors.$gray-200;
     }
 
     &[disabled],
     &:disabled {
       pointer-events: none;
 
-      color: $auk-gray-700;
+      color: s-colors.$gray-700;
       opacity: .3;
 
       .au-c-icon {
-        color: $auk-gray-600;
+        color: s-colors.$gray-600;
       }
     }
   }

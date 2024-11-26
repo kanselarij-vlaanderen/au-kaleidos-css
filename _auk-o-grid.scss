@@ -1,3 +1,7 @@
+@use "auk-table";
+@use "tools/t-mixins";
+@use "settings/s-globals";
+
 /* ==========================================================================
    Grid
    ---
@@ -6,8 +10,8 @@
    @brenner-company (Karel Persoons): Some styling (regarding col-start & -end) is commented out for the moment because I'm not sure this is necessary at all and it generates a quite few extra Kilobytes. 
    ========================================================================== */
 
-$auk-o-grid-columns: 12 !default;
-$auk-o-grid-column-gap: 1.5rem !default;
+$o-grid-columns: 12 !default;
+$o-grid-column-gap: 1.5rem !default;
   
 
 /* Grid columns (default)
@@ -15,20 +19,20 @@ $auk-o-grid-column-gap: 1.5rem !default;
 
 .auk-o-grid {
   display: grid;
-  gap: $auk-o-grid-column-gap;
+  gap: $o-grid-column-gap;
 }
 
 .auk-o-grid {
-  grid-template-columns: repeat($auk-o-grid-columns, 1fr);
+  grid-template-columns: repeat($o-grid-columns, 1fr);
 
   > * {
-    grid-column: span var(--auk-o-grid-col-span, $auk-o-grid-columns) / span var(--auk-o-grid-col-span, $auk-o-grid-columns);
+    grid-column: span var(--auk-o-grid-col-span, $o-grid-columns) / span var(--auk-o-grid-col-span, $o-grid-columns);
   }
 }
 
-@for $i from 1 through $auk-o-grid-columns {
-  .auk-o-grid-col-#{$i} {
-    --auk-o-grid-col-span: #{$i};
+@for $i from 1 through $o-grid-columns {
+  .auk-o-grid-col-#{auk-table.$i} {
+    --auk-o-grid-col-span: #{auk-table.$i};
   
   }
 
@@ -55,7 +59,7 @@ $auk-o-grid-column-gap: 1.5rem !default;
 
 .auk-o-grid-auto {
   display: grid;
-  gap: $auk-o-grid-column-gap;
+  gap: $o-grid-column-gap;
 }
 
 .auk-o-grid-auto {
@@ -90,11 +94,11 @@ $auk-o-grid-column-gap: 1.5rem !default;
 /* Breakpoints
   ========================================================================== */
 
-@each $breakpoint, $width in $g-breakpoints {
-  @include breakpoint($breakpoint) {
-    @for $i from 1 through $auk-o-grid-columns {
-      .auk-o-grid-col-#{$i}\@#{$breakpoint} {
-        --auk-o-grid-col-span: #{$i};
+@each $breakpoint, $width in s-globals.$breakpoints {
+  @include t-mixins.breakpoint($breakpoint) {
+    @for $i from 1 through $o-grid-columns {
+      .auk-o-grid-col-#{auk-table.$i}\@#{$breakpoint} {
+        --auk-o-grid-col-span: #{auk-table.$i};
       }
   
       // .auk-o-grid-col-start-#{$i}\@#{$breakpoint} {

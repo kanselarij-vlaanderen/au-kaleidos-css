@@ -1,3 +1,9 @@
+@use "sass:map";
+
+@use "../settings";
+// @use "../tools";
+// @use "s-variables" as variables;
+
 /* ==========================================================================
    Mixins
    ---
@@ -7,13 +13,13 @@
 @mixin element-focus {
    &:focus {
       outline: 0;
-      border-color: $auk-yellow-500;
-      box-shadow: inset 0 0 0 0.1rem $auk-yellow-500;
+      border-color: settings.$color-yellow-500;
+      box-shadow: inset 0 0 0 0.1rem settings.$color-yellow-500;
    }
 }
 
 @mixin breakpoint($breakpoint) {
-   @media (min-width: map-get($map: $g-breakpoints, $key: $breakpoint)) {
+   @media (min-width: map.get($map: settings.$global-breakpoints, $key: $breakpoint)) {
       @content;
    }
 }

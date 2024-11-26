@@ -7,7 +7,7 @@
 /* Variables
    ========================================================================== */
 
-$auk-o-flex-gutter-width: 0.8rem !default;
+$o-flex-gutter-width: 0.8rem !default;
 
 /* Utility classes
    ========================================================================== */
@@ -75,11 +75,11 @@ $auk-o-flex-gutter-width: 0.8rem !default;
 }
 
 .auk-o-flex--spaced > *:not(:last-child) {
-  margin-right: $auk-o-flex-gutter-width !important;
+  margin-right: $o-flex-gutter-width !important;
 }
 
 .auk-o-flex--spaced-wide > *:not(:last-child) {
-  margin-right: $auk-o-flex-gutter-width * 2 !important;
+  margin-right: $o-flex-gutter-width * 2 !important;
 }
 
 /* Gap classes

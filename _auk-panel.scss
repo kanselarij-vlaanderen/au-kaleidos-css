@@ -1,3 +1,5 @@
+@use "settings/s-colors";
+
 /* ==========================================================================
   auk-panel
    ========================================================================== */
@@ -9,7 +11,7 @@
 }
 
 .auk-panel--gray-100 {
-  background-color: $auk-gray-100;
+  background-color: s-colors.$gray-100;
 }
 
 .auk-panel__header {
@@ -73,7 +75,7 @@
   .auk-document-card {
     border: none;
     &:not(:last-of-type) {
-      border-bottom: .1rem solid $auk-gray-300;
+      border-bottom: .1rem solid s-colors.$gray-300;
     }
   }
 }

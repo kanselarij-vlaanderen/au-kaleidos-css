@@ -1,3 +1,5 @@
+@use "settings/s-globals";
+
 /* ==========================================================================
   Utilities: dimensions
   ========================================================================== */
@@ -22,7 +24,7 @@
   width: 75% !important;
 }
 
-@each $dimension, $value in $g-dimensions {
+@each $dimension, $value in s-globals.$dimensions {
   .auk-u-width-#{$dimension} {
     width: $value !important;
   }
@@ -52,7 +54,7 @@
   height: 75% !important;
 }
 
-@each $dimension, $value in $g-dimensions {
+@each $dimension, $value in s-globals.$dimensions {
   .auk-u-height-#{$dimension} {
     height: $value !important;
   }

@@ -1,17 +1,19 @@
+@use "settings/s-colors";
+
 /* ==========================================================================
   Text utilities
    ========================================================================== */
 
 .auk-u-text-muted {
-  color: $auk-gray-600 !important;
+  color: s-colors.$gray-600 !important;
 }
 
 .auk-u-text-success {
-  color: $auk-green-700 !important;
+  color: s-colors.$green-700 !important;
 }
 
 .auk-u-text-error {
-  color: $auk-red-700 !important;
+  color: s-colors.$red-700 !important;
 }
 
 .auk-u-italic {

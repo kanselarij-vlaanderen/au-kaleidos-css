@@ -1,9 +1,11 @@
+@use "settings";
+
 /* ==========================================================================
   auk-key-value
    ========================================================================== */
 
 .auk-key-value-item__label {
-  color: $auk-color-muted;
+  color: settings.$color-muted;
   font-weight: 500;
   max-width: 22rem;
   margin-bottom: 0.5rem;

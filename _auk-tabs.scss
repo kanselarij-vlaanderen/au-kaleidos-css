@@ -1,3 +1,6 @@
+@use "settings/s-colors";
+@use "tools";
+
 /* ==========================================================================
   auk-tabs
    ========================================================================== */
@@ -9,7 +12,7 @@
 }
 
 .auk-tabs--border-bottom {
-  border-bottom: 0.1rem solid $auk-gray-300;
+  border-bottom: 0.1rem solid s-colors.$gray-300;
 }
 
 .auk-tabs__tab {
@@ -26,7 +29,7 @@
   border-bottom: 0.3rem solid transparent;
   background-color: transparent;
 
-  color: $auk-blue-500;
+  color: s-colors.$blue-500;
   font-family: flanders-sans, sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
@@ -38,10 +41,10 @@
   }
 
   &:hover {
-    background-color: $auk-gray-100;
+    background-color: s-colors.$gray-100;
   }
 
-  @include element-focus;
+  @include tools.mixin-element-focus;
 }
 
 .auk-tabs__tab__inner {
@@ -59,19 +62,19 @@
 
 .auk-tabs__tab__counter {
   font-weight: 400;
-  color: $auk-blue-500;
+  color: s-colors.$blue-500;
 }
 
 .auk-tabs__tab__link--active {
-  color: $auk-gray-900;
+  color: s-colors.$gray-900;
 
   &,
   &:focus {
-    border-bottom: 0.3rem solid $auk-gray-900;
+    border-bottom: 0.3rem solid s-colors.$gray-900;
   }
 
   .auk-tabs__tab__counter {
-    color: $auk-gray-600;
+    color: s-colors.$gray-600;
   }
 }
 
@@ -79,7 +82,7 @@
   ========================================================================== */
 
 .auk-tabs--reversed {
-  border-top: 0.1rem solid $auk-gray-300;
+  border-top: 0.1rem solid s-colors.$gray-300;
   margin-top: 1.2rem;
 }
 
@@ -88,7 +91,7 @@
     border-top: 0.3rem solid transparent;
     border-bottom: none;
 
-    @include element-focus;
+    @include tools.mixin-element-focus;
   }
 }
 
@@ -97,11 +100,11 @@
 }
 
 .auk-tabs--reversed .auk-tabs__tab__link--active {
-  color: $auk-gray-900;
+  color: s-colors.$gray-900;
 
   &,
   &:focus {
-    border-top: 0.3rem solid $auk-gray-900;
+    border-top: 0.3rem solid s-colors.$gray-900;
     border-bottom: none;
   }
 }
@@ -111,7 +114,7 @@
 
 .auk-tabs__hierarchical-back {
   .auk-tabs__tab__link--active {
-    color: $auk-blue-500;
+    color: s-colors.$blue-500;
     border-bottom: 0.3rem solid transparent;
   }
 }

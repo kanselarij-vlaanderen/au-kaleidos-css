@@ -1,3 +1,7 @@
+@use "settings/s-colors";
+@use "settings/s-shadows";
+@use "settings/s-z-index";
+
 /* ==========================================================================
   auk-modal
    ========================================================================== */
@@ -5,15 +9,15 @@
 /* Variables
    ========================================================================== */
 
-$auk-modal-padding-horizontal: 2.4rem !default;
-$auk-modal-padding-vertical: 2.4rem !default;
-$auk-modal-border-radius: 0.3rem !default;
-$auk-modal-shadow-color: $auk-gray-600 !default;
+$modal-padding-horizontal: 2.4rem !default;
+$modal-padding-vertical: 2.4rem !default;
+$modal-border-radius: 0.3rem !default;
+$modal-color: s-colors.$gray-600 !default;
 
-$auk-modal-header-bg-color: #fff !default;
-$auk-modal-footer-bg-color: #fff !default;
-$auk-modal-header-border-color: $auk-gray-300 !default;
-$auk-modal-footer-border-color: $auk-gray-300 !default;
+$modal-header-bg-color: #fff !default;
+$modal-footer-bg-color: #fff !default;
+$modal-header-border-color: s-colors.$gray-300 !default;
+$modal-footer-border-color: s-colors.$gray-300 !default;
 
 /* Component
   ========================================================================== */
@@ -42,7 +46,7 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
 }
 
 .auk-modal {
-  z-index: $z-index-modal;
+  z-index: s-z-index.$modal;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -63,15 +67,15 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
   flex: 0 1 auto;
   flex-direction: column;
   max-height: calc(100vh - 4rem);
-  border-radius: $auk-modal-border-radius;
-  box-shadow: $auk-shadow-large;
+  border-radius: $modal-border-radius;
+  box-shadow: s-shadows.$large;
 
   > *:first-child {
-    border-radius: $auk-modal-border-radius $auk-modal-border-radius 0 0;
+    border-radius: $modal-border-radius $modal-border-radius 0 0;
   }
 
   > *:last-child {
-    border-radius: 0 0 $auk-modal-border-radius $auk-modal-border-radius;
+    border-radius: 0 0 $modal-border-radius $modal-border-radius;
   }
 }
 
@@ -80,7 +84,7 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
 }
 
 .auk-modal__header--bordered {
-  border-bottom: 0.1rem solid $auk-gray-300;
+  border-bottom: 0.1rem solid s-colors.$gray-300;
 }
 
 .auk-modal__body {
@@ -93,7 +97,7 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
 }
 
 .auk-modal__footer--bordered {
-  border-top: 0.1rem solid $auk-gray-300;
+  border-top: 0.1rem solid s-colors.$gray-300;
 }
 
 .auk-modal__header,
@@ -168,10 +172,10 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba($auk-gray-900, 0.2);
+  background: rgba(s-colors.$gray-900, 0.2);
   transition: visibility 0s linear 0.2s, opacity 0.2s linear;
   visibility: hidden;
-  z-index: $z-index-modal-backdrop;
+  z-index: s-z-index.$modal-backdrop;
 
   &.auk-modal-backdrop--visible {
     opacity: 1;
@@ -181,5 +185,5 @@ $auk-modal-footer-border-color: $auk-gray-300 !default;
 }
 
 .auk-modal-context + .auk-modal-context {
-  background: rgba($auk-gray-900, 0.2);
+  background: rgba(s-colors.$gray-900, 0.2);
 }

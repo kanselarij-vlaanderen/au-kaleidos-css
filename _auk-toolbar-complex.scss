@@ -1,3 +1,5 @@
+@use "settings/s-colors";
+
 /* ==========================================================================
   auk-toolbar-complex (complex variant)
    ========================================================================== */
@@ -12,11 +14,11 @@
 }
 
 .auk-toolbar-complex--gray-100 {
-  background-color: $auk-gray-100;
+  background-color: s-colors.$gray-100;
 }
 
 .auk-toolbar-complex--border-bottom {
-  border-bottom: 0.1rem solid $auk-gray-300;
+  border-bottom: 0.1rem solid s-colors.$gray-300;
 }
 
 .auk-toolbar-complex--large {
@@ -36,7 +38,7 @@
   font-weight: 400;
   margin: 0 0 1.5rem;
   line-height: 1.6;
-  color: $auk-gray-800;
+  color: s-colors.$gray-800;
 }
 
 .auk-toolbar-complex__title--small {

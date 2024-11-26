@@ -1,18 +1,21 @@
+@use "settings/s-colors";
+@use "settings/s-globals";
+
 /* ==========================================================================
   auk-filter-pill
    ========================================================================== */
 
 .auk-filter-pill {
-  font-family: $g-base-font-family;
+  font-family: s-globals.$base-font-family;
   font-size: 1.4rem;
   display: inline-flex;
   align-items: center;
   padding: 0 .5rem 0 .6rem;
   border-radius: .5rem;
   height: 2.4rem;
-  color: $auk-gray-600;
-  background-color: $auk-gray-100;
-  border: .1rem solid $auk-gray-300;
+  color: s-colors.$gray-600;
+  background-color: s-colors.$gray-100;
+  border: .1rem solid s-colors.$gray-300;
 }
 
 .auk-filter-pill__action {
@@ -30,8 +33,8 @@
     top: -0.2rem;
     height: 2.2rem;
     width: 0.1rem;
-    background-color: $auk-gray-300;
-    color: $auk-gray-600;
+    background-color: s-colors.$gray-300;
+    color: s-colors.$gray-600;
   }
 }
 
@@ -43,7 +46,7 @@
 .auk-filter-pill__multiple-labels {
   font-weight: 400;
   font-size: 1.2rem;
-  background-color: $auk-gray-600;
+  background-color: s-colors.$gray-600;
   color: #fff;
   width: 1.6rem;
   height: 1.6rem;
