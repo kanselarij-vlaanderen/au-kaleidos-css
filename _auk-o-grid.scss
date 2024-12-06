@@ -1,6 +1,6 @@
 @use "auk-table";
 @use "tools/t-mixins";
-@use "settings/s-globals";
+@use "settings";
 
 /* ==========================================================================
    Grid
@@ -94,7 +94,7 @@ $o-grid-column-gap: 1.5rem !default;
 /* Breakpoints
   ========================================================================== */
 
-@each $breakpoint, $width in s-globals.$breakpoints {
+@each $breakpoint, $width in settings.$global-breakpoints {
   @include t-mixins.breakpoint($breakpoint) {
     @for $i from 1 through $o-grid-columns {
       .auk-o-grid-col-#{auk-table.$i}\@#{$breakpoint} {

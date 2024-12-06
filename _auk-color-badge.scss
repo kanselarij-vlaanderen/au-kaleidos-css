@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
     Component: Color badge
@@ -12,17 +12,17 @@
 }
 
 .auk-color-badge--default {
-  background-color: s-colors.$gray-500;
+  background-color: settings.$color-gray-500;
 }
 
 .auk-color-badge--warning {
-  background-color: s-colors.$yellow-500;
+  background-color: settings.$color-yellow-500;
 }
 
 .auk-color-badge--error {
-  background-color: s-colors.$red-500;
+  background-color: settings.$color-red-500;
 }
 
 .auk-color-badge--success {
-  background-color: s-colors.$green-500;
+  background-color: settings.$color-green-500;
 }

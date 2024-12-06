@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
    auk-skeleton
@@ -7,7 +7,7 @@
 .auk-skeleton {
   position: relative;
   display: inline-block;
-  background-color: s-colors.$gray-300;
+  background-color: settings.$color-gray-300;
 }
 
 .auk-skeleton--rectangle {

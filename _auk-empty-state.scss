@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-empty-state
@@ -19,5 +19,5 @@
 }
 
 .auk-empty-state__content {
-  color: s-colors.$gray-600;
+  color: settings.$color-gray-600;
 }

@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-brand
@@ -24,7 +24,7 @@
   height: 4.9rem;
   padding-left: .75rem;
   overflow: hidden;
-  background-color: s-colors.$brand;
+  background-color: settings.$color-brand;
 
   svg {
     height: 100%;
@@ -61,7 +61,7 @@
   line-height: 1;
   position: relative;
   font-weight: 500;
-  color: s-colors.$gray-1000;
+  color: settings.$color-gray-1000;
   margin-left: .6rem;
   transition: color 125ms cubic-bezier(.19,1,.22,1);
 }

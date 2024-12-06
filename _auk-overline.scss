@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   Overline
@@ -7,7 +7,7 @@
 .auk-overline {
   text-transform: uppercase;
   font-weight: 500;
-  color: s-colors.$gray-600;
+  color: settings.$color-gray-600;
   letter-spacing: 0.05em;
   font-size: 1.3rem;
 }

@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-button-loading
@@ -6,7 +6,7 @@
 
 .auk-button-loading {
   font-family: flanders-sans, sans-serif;
-  background-color: s-colors.$gray-200;
+  background-color: settings.$color-gray-200;
   font-size: 1.6rem;
   border: none;
   appearance: none;

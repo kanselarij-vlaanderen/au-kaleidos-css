@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-avatar
@@ -30,7 +30,7 @@
    ========================================================================== */
 
 .auk-avatar--default {
-  background-color: s-colors.$gray-200;
+  background-color: settings.$color-gray-200;
   color: #666;
 }
 

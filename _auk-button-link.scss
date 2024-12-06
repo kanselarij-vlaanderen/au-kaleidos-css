@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-button-link
@@ -18,7 +18,7 @@
   font-family: flanders-sans,  sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  color: s-colors.$blue-500;
+  color: settings.$color-blue-500;
   display: flex;
   cursor: pointer;
 
@@ -26,12 +26,12 @@
 
   &:hover,
   &:active {
-    color: s-colors.$blue-700;
+    color: settings.$color-blue-700;
   }
 
   &:focus {
-    border-color: s-colors.$yellow-500;
-    outline: 0.3rem solid s-colors.$yellow-500;
+    border-color: settings.$color-yellow-500;
+    outline: 0.3rem solid settings.$color-yellow-500;
     outline-offset: 0.2rem;
  }
 }
@@ -40,7 +40,7 @@
   &[disabled],
   &:disabled,
   &.auk-button--disabled {
-    color: s-colors.$gray-400;
+    color: settings.$color-gray-400;
     text-decoration: none;
     pointer-events: none;
     &:hover,
@@ -52,10 +52,10 @@
 }
 
 .auk-button-link--muted {
-  color: s-colors.$gray-600;
+  color: settings.$color-gray-600;
   &:hover,
   &:active {
-    color: s-colors.$gray-800;
+    color: settings.$color-gray-800;
   }
 }
 

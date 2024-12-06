@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-file-upload
@@ -25,7 +25,7 @@
 }
 
 .auk-file-upload__content {
-  border: 0.1rem dashed s-colors.$gray-300;
+  border: 0.1rem dashed settings.$color-gray-300;
   border-radius: .3rem;
   width: 100%;
   padding: 3rem;
@@ -41,21 +41,21 @@
 
 .auk-file-upload--gray-100 {
   .auk-file-upload__content {
-    background-color: s-colors.$gray-100;
+    background-color: settings.$color-gray-100;
   }
 }
 
 .auk-file-upload--success {
   .auk-file-upload__content {
-    background-color: s-colors.$green-100;
-    border-color: s-colors.$green-300;
+    background-color: settings.$color-green-100;
+    border-color: settings.$color-green-300;
   }
 }
 
 .auk-file-upload--error {
   .auk-file-upload__content {
-    background-color: s-colors.$red-50;
-    border-color: s-colors.$red-300;
+    background-color: settings.$color-red-50;
+    border-color: settings.$color-red-300;
   }
 }
 
@@ -75,11 +75,11 @@
 .auk-file-upload input[type="file"]:focus:not([disabled]) ~ .auk-file-upload__content {
   outline: 0;
   border-color: transparent;
-  box-shadow: inset 0 0 0 0.2rem s-colors.$yellow-500;
+  box-shadow: inset 0 0 0 0.2rem settings.$color-yellow-500;
 }
 
 .auk-file-upload input[type="file"]:hover:not([disabled]) ~ .auk-file-upload__content {
-  background-color: s-colors.$gray-100;
+  background-color: settings.$color-gray-100;
 }
 
 .auk-file-upload__action-button {
@@ -88,15 +88,15 @@
 
 .auk-file-upload input[type="file"]:hover:not([disabled]) ~ .auk-file-upload__content {
   .auk-file-upload__action-button {
-    color: s-colors.$blue-500;
-    box-shadow: inset 0 0 0 0.1rem s-colors.$blue-500;
+    color: settings.$color-blue-500;
+    box-shadow: inset 0 0 0 0.1rem settings.$color-blue-500;
   }
 }
 
 .auk-file-upload input[type="file"]:active:not([disabled]) ~ .auk-file-upload__content {
   .auk-file-upload__action-button {
-    color: s-colors.$blue-800;
-    box-shadow: inset 0 0 0 0.1rem s-colors.$blue-800;
+    color: settings.$color-blue-800;
+    box-shadow: inset 0 0 0 0.1rem settings.$color-blue-800;
   }
 }
 

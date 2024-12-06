@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 
 /* ==========================================================================
   auk-toolbar (simple variant)
@@ -20,7 +20,7 @@
   font-weight: 400;
   margin: 0 0 1.5rem;
   line-height: 1.6;
-  color: s-colors.$gray-800;
+  color: settings.$color-gray-800;
 }
 
 .auk-toolbar__spacer {

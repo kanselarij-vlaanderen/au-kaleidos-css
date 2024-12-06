@@ -1,4 +1,4 @@
-@use "settings/s-colors";
+@use "settings";
 @use "tools";
 
 /* ==========================================================================
@@ -12,7 +12,7 @@
 }
 
 .auk-tabs--border-bottom {
-  border-bottom: 0.1rem solid s-colors.$gray-300;
+  border-bottom: 0.1rem solid settings.$color-gray-300;
 }
 
 .auk-tabs__tab {
@@ -29,7 +29,7 @@
   border-bottom: 0.3rem solid transparent;
   background-color: transparent;
 
-  color: s-colors.$blue-500;
+  color: settings.$color-blue-500;
   font-family: flanders-sans, sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
@@ -41,7 +41,7 @@
   }
 
   &:hover {
-    background-color: s-colors.$gray-100;
+    background-color: settings.$color-gray-100;
   }
 
   @include tools.mixin-element-focus;
@@ -62,19 +62,19 @@
 
 .auk-tabs__tab__counter {
   font-weight: 400;
-  color: s-colors.$blue-500;
+  color: settings.$color-blue-500;
 }
 
 .auk-tabs__tab__link--active {
-  color: s-colors.$gray-900;
+  color: settings.$color-gray-900;
 
   &,
   &:focus {
-    border-bottom: 0.3rem solid s-colors.$gray-900;
+    border-bottom: 0.3rem solid settings.$color-gray-900;
   }
 
   .auk-tabs__tab__counter {
-    color: s-colors.$gray-600;
+    color: settings.$color-gray-600;
   }
 }
 
@@ -82,7 +82,7 @@
   ========================================================================== */
 
 .auk-tabs--reversed {
-  border-top: 0.1rem solid s-colors.$gray-300;
+  border-top: 0.1rem solid settings.$color-gray-300;
   margin-top: 1.2rem;
 }
 
@@ -100,11 +100,11 @@
 }
 
 .auk-tabs--reversed .auk-tabs__tab__link--active {
-  color: s-colors.$gray-900;
+  color: settings.$color-gray-900;
 
   &,
   &:focus {
-    border-top: 0.3rem solid s-colors.$gray-900;
+    border-top: 0.3rem solid settings.$color-gray-900;
     border-bottom: none;
   }
 }
@@ -114,7 +114,7 @@
 
 .auk-tabs__hierarchical-back {
   .auk-tabs__tab__link--active {
-    color: s-colors.$blue-500;
+    color: settings.$color-blue-500;
     border-bottom: 0.3rem solid transparent;
   }
 }
