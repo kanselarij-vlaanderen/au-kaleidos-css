@@ -5,6 +5,8 @@
 
 **For additional information or requests, we refer to the [deprecation message](https://github.com/kanselarij-vlaanderen/au-kaleidos-css/issues/13).**
 
+---
+
 AU Kaleidos SCSS as a separate package.
 
 This package consists of 2 SCSS files.
